@@ -1,0 +1,54 @@
+# Use custom format
+#format = """
+#[┌───────────────────>](bold green)
+#[│](bold green)$username$directory$rust$package
+#[└─>](bold green) """
+
+# Don't print a new line at the start of the prompt
+add_newline = true
+
+[username]
+format = '\[[$user]($style)\]'
+
+[cmd_duration]
+disabled = true
+
+[line_break]
+disabled = true
+
+[package]
+disabled = true
+
+[directory]
+style = "bold cyan"
+read_only_style = "red"
+read_only = " 🔒"
+#show_symbol = " "
+#home_symbol = " ~"
+format = '[$path]($style)[$read_only]($read_only_style) '
+
+# Replace the "❯" symbol in the prompt with "↳"
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+#use_symbol_for_status = true
+
+#[username]
+#style_user = "bold yellow"
+#style_root = "bold blue"
+#format = "[$user]($style) @ "
+#show_always = true
+
+#[hostname]
+#ssh_only = false                                                                                                                            
+#format =  "[$hostname](bold white) in "                                                                                                     
+#trim_at = ".companyname.com"                                                                                                                
+#disabled = false
+
+#The memory_usage module shows current system memory and swap usage
+#[memory_usage]
+#disabled = false
+#threshold = -1
+#symbol = "💻 "
+#style = "bold yellow"
+#format = "| $symbol[${ram}( | ${swap})]($style) "

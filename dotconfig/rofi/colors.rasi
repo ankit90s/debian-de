@@ -1,0 +1,14 @@
+* {
+    font:   "FiraCode Nerd Font Medium 13";
+    bg0:     #2B3339;
+    bg1:     #323D43;
+    fg0:     #D3C6AA;
+    accent-color:     #819A67;
+    urgent-color:     #DBBC7F;
+    background-color:   transparent;
+    text-color:         @fg0;
+    margin:     0;
+    padding:    0;
+    spacing:    0;
+}
+

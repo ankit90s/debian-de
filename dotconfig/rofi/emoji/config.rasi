@@ -1,0 +1,9 @@
+configuration {
+ terminal: "kitty";
+ font: "FiraCode Nerd Font Mono Bold 10";
+ hover-select: true;
+ me-select-entry: "";
+ me-accept-entry: [ MousePrimary, MouseSecondary, MouseDPrimary ];
+ }
+@theme "~/.config/rofi/emoji/squared-everforest.rasi"
+

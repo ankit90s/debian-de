@@ -1,0 +1,11 @@
+configuration {
+ modi: "combi";
+ terminal: "kitty";
+ show-icons: true;
+ icon-theme: "papirus-dark";
+ display-drun: "";
+ font: "FiraCode Nerd Font Mono Bold 10";
+ combi-modi: "drun";
+ }
+@theme "~/.config/rofi/calculator/squared-everforest.rasi"
+

@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/sammy/debian-bspwm-stable/assets'
+let g:netrw_dirhist_3='/home/sammy/.config/rofi/power'
+let g:netrw_dirhist_2='/home/sammy/.config/rofi/calculator'
+let g:netrw_dirhist_1='/home/sammy/.config/rofi/emoji'
