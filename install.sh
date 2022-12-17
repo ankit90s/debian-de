@@ -17,7 +17,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # fonts
 sudo apt install -y fonts-indic fonts-noto-color-emoji
 
-# Material Design Iconic Fonts
+# Material Design Icon Fonts
 wget https://github.com/zavoloklom/material-design-iconic-font/releases/download/2.2.0/material-design-iconic-font.zip
 sudo unzip material-design-iconic-font.zip -d /usr/share/fonts/
 rm -f material-design-iconic-font.zip
@@ -31,6 +31,9 @@ source /home/$USER/debian-gnome/mpv.sh
 
 # nerd fonts
 source /home/$USER/debian-gnome/nerdfonts.sh
+
+# greenclip
+sudo cp /home/$USER/debian-gnome/dotscripts/greenclip /usr/local/bin
 
 # copy scripts folder
 cp -r /home/$USER/debian-gnome/scripts /home/$USER/
