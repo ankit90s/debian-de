@@ -5,10 +5,10 @@ DEPENDENCIES="grep sed curl gawk openssl ffmpeg"
 sudo apt install $DEPENDENCIES
 
 # ani-cli
-sudo rm -rf "/usr/local/share/ani-cli" "/usr/local/bin/ani-cli" "/usr/local/bin/UI" /usr/local/bin/player_*
-git clone "https://github.com/pystardust/ani-cli.git" && cd ./ani-cli
-sudo cp ./ani-cli /usr/local/bin
-cd .. && rm -rf "./ani-cli"
+wget -qO- https://Wiener234.github.io/ani-cli-ppa/KEY.gpg | sudo tee /etc/apt/trusted.gpg.d/ani-cli.asc
+wget -qO- https://Wiener234.github.io/ani-cli-ppa/ani-cli-debian.list | sudo tee /etc/apt/sources.list.d/ani-cli-debian.list
+sudo apt update
+sudo apt install -y ani-cli
 
 # mov-cli
 sudo curl -s "https://github.com/mov-cli/mov-cli/raw/v3/mov-cli" -L -o /usr/local/bin/mov-cli && sudo chmod +x /usr/local/bin/mov-cli
@@ -29,10 +29,6 @@ git clone https://github.com/pystardust/ytfzf
 cd ytfzf
 sudo make install doc
 cd ../ && rm -rf ytfzf
-
-# speedtest
-# curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
-# sudo apt -y install speedtest
 
 hash -r
 
