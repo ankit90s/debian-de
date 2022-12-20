@@ -4,12 +4,9 @@ sudo mkdir -p ~/.local/share/fonts
 cd /tmp
 fonts=( 
 "FiraCode" 
-"Hack" 
 "JetBrainsMono" 
 "RobotoMono" 
-"SourceCodePro" 
 "UbuntuMono"
-"BigBlueTerminal"
 )
 
 for font in ${fonts[@]}

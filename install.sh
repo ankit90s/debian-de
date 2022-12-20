@@ -8,7 +8,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install -y gnome-tweaks
 
 # Applications
-sudo apt install -y curl git wget axel aria2 pip htop kitty neofetch ranger rofi cmatrix espeak ncdu translate-shell 
+sudo apt install -y curl git wget axel aria2 pip htop kitty neofetch ranger rofi cmatrix espeak ncdu translate-shell rsync 
 
 # Text editor
 sudo apt install -y neovim
@@ -25,12 +25,6 @@ fc-cache -fv
 
 # Papirus icon
 sudo apt install -y papirus-icon-theme -t bullseye-backports 
-
-# mpv
-source /home/$USER/debian-gnome/mpv.sh
-
-# nerd fonts
-source /home/$USER/debian-gnome/nerdfonts.sh
 
 # greenclip
 sudo cp /home/$USER/debian-gnome/dotscripts/greenclip /usr/local/bin
