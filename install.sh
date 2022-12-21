@@ -26,6 +26,10 @@ fc-cache -fv
 # Papirus icon
 sudo apt install -y papirus-icon-theme -t bullseye-backports 
 
+# kde apps theme fix
+sudo apt install -y qt5-style-plugins
+sudo cp /home/$USER/debian-gnome/environment /etc
+
 # greenclip
 sudo cp /home/$USER/debian-gnome/dotscripts/greenclip /usr/local/bin
 
