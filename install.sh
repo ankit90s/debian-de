@@ -5,10 +5,10 @@ sudo cp /home/$USER/debian-gnome/sources.list /etc/apt/sources.list
 sudo apt update && sudo apt upgrade -y
 
 # gnome tweaks
-sudo apt install -y gnome-tweaks
+# sudo apt install -y gnome-tweaks
 
 # Applications
-sudo apt install -y curl git wget axel aria2 pip htop kitty neofetch ranger rofi cmatrix espeak ncdu translate-shell rsync 
+sudo apt install -y curl git wget axel aria2 pip htop kitty neofetch ranger rofi cmatrix espeak ncdu translate-shell rsync exa
 
 # Text editor
 sudo apt install -y neovim
