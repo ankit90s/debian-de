@@ -36,5 +36,8 @@ sudo cp /home/$USER/debian-gnome/dotscripts/greenclip /usr/local/bin
 # copy scripts folder
 cp -r /home/$USER/debian-gnome/scripts /home/$USER/
 
+# libreoffice sifr theme
+sudo curl -s https://raw.githubusercontent.com/rizmut/libreoffice-style-sifr/master/install-sifr.sh | sh
+
 # copy config files
 cp -r /home/$USER/debian-gnome/dotconfig/* /home/$USER/.config/
