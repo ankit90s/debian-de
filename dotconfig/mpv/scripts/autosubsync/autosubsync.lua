@@ -19,7 +19,7 @@ local config = {
     -- Change the following lines if the locations of executables differ from the defaults
     -- If set to empty, the path will be guessed.
     ffmpeg_path = "/usr/bin/ffmpeg",
-    ffsubsync_path = "/home/$USER/.local/bin/ffsubsync",
+    ffsubsync_path = "/home/ankit/.local/bin/ffsubsync",
     alass_path = "/usr/bin/alass-linux64",
 
     -- Choose what tool to use. Allowed options: ffsubsync, alass, ask.
