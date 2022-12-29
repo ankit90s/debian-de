@@ -1,14 +1,14 @@
 #! /bin/sh
 
-sudo mv /etc/apt/sources.list /etc/apt/sources.list.bkp
-sudo cp /home/$USER/debian-gnome/sources.list /etc/apt/sources.list
-sudo apt update && sudo apt upgrade -y
+#sudo mv /etc/apt/sources.list /etc/apt/sources.list.bkp
+#sudo cp /home/$USER/debian-gnome/sources.list /etc/apt/sources.list
+#sudo apt update && sudo apt upgrade -y
 
 # gnome tweaks
 # sudo apt install -y gnome-tweaks
 
 # Applications
-sudo apt install -y curl git wget axel aria2 pip htop kitty neofetch ranger rofi cmatrix espeak ncdu translate-shell rsync exa kdeconnect
+sudo apt install -y curl git wget axel aria2 pip htop kitty neofetch ranger rofi cmatrix espeak ncdu translate-shell rsync exa kdeconnect conky
 
 # redshift
 sudo apt install -y redshift
@@ -33,8 +33,8 @@ fc-cache -fv
 sudo apt install -y papirus-icon-theme -t bullseye-backports 
 
 # kde apps theme fix
-sudo apt install -y qt5-style-plugins
-sudo cp /home/$USER/debian-gnome/environment /etc
+#sudo apt install -y qt5-style-plugins
+#sudo cp /home/$USER/debian-gnome/environment /etc
 
 # Restricted extras
 sudo apt install -y ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
