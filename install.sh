@@ -1,8 +1,8 @@
 #! /bin/sh
 
-#sudo mv /etc/apt/sources.list /etc/apt/sources.list.bkp
-#sudo cp /home/$USER/debian-gnome/sources.list /etc/apt/sources.list
-#sudo apt update && sudo apt upgrade -y
+sudo mv /etc/apt/sources.list /etc/apt/sources.list.bkp
+sudo cp /home/$USER/debian-gnome/sources.list /etc/apt/sources.list
+sudo apt update && sudo apt upgrade -y
 
 # gnome tweaks
 # sudo apt install -y gnome-tweaks

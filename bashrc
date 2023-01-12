@@ -75,21 +75,21 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='exa --long --icons --color=always --group-directories-first'
+    alias ls='exa --long --icons --group-directories-first --color=always'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
+    #alias grep='grep --color=auto'
+    #alias fgrep='fgrep --color=auto'
+    #alias egrep='egrep --color=auto'
 fi
 
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
+#alias ll='ls -l'
 alias la='ls -ah'
-#alias la='ls -A'
 #alias l='ls -CF'
 
 # Alias definitions.
@@ -111,16 +111,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-. "$HOME/.cargo/env"
 
-open ()
-{
-    for i in $*
-    do
-        setsid nohup xdg-open $i > /dev/null 2> /dev/null
-    done
-}
-
-clear && uname -rs
+uname -rs
 eval "$(starship init bash)"
-export PATH="/home/$USER/.local/bin:$PATH"
