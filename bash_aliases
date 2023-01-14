@@ -13,12 +13,6 @@ alias tl='trans'
 # Kdeconnect
 alias share='kdeconnect-cli -d $(kdeconnect-cli -a --id-only) --share'
 
-# Backup Script Initiate
-alias backup='/home/$USER/scripts/./bkp-config.sh'
-
-# shutdown
-# alias shutdown='shutdown -h now'
-
 # Browse Phone
 alias phone='cd /run/user/1000/gvfs'
 
@@ -27,10 +21,6 @@ alias phone='cd /run/user/1000/gvfs'
 
 # Singapore time
 alias singapore='TZ='Asia/Singapore' date'
-
-# Sytem
-alias reboot='sudo reboot'
-alias shutdown='sudo poweroff'
 
 # music
 # alias romance="mpv --no-video https://youtu.be/3M9Oh4Hq1qE"
