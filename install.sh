@@ -45,6 +45,11 @@ sudo apt install -y fonts-crosextra-carlito fonts-crosextra-caladea
 # greenclip
 sudo cp /home/$USER/debian-gnome/dotscripts/greenclip /usr/local/bin
 
+# google chrome setup
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install -y ./google-stable_current_amd64.deb
+rm -f google-stable_current_amd64.deb
+
 # copy scripts folder
 cp -r /home/$USER/debian-gnome/scripts /home/$USER/
 
