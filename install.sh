@@ -1,8 +1,8 @@
 #! /bin/sh
 
-sudo mv /etc/apt/sources.list /etc/apt/sources.list.bkp
-sudo cp /home/$USER/debian-gnome/sources.list /etc/apt/sources.list
-sudo apt update && sudo apt upgrade -y
+#sudo mv /etc/apt/sources.list /etc/apt/sources.list.bkp
+#sudo cp /home/$USER/debian-gnome/sources.list /etc/apt/sources.list
+#sudo apt update && sudo apt upgrade -y
 
 # gnome tweaks
 # sudo apt install -y gnome-tweaks
@@ -30,11 +30,11 @@ rm -f material-design-iconic-font.zip
 fc-cache -fv
 
 # Papirus icon
-sudo apt install -y papirus-icon-theme -t bullseye-backports 
+#sudo apt install -y papirus-icon-theme -t bullseye-backports 
 
 # kde apps theme fix
-sudo apt install -y qt5-style-plugins
-sudo cp /home/$USER/debian-gnome/environment /etc
+#sudo apt install -y qt5-style-plugins
+#sudo cp /home/$USER/debian-gnome/environment /etc
 
 # Restricted extras
 sudo apt install -y ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
@@ -43,7 +43,7 @@ sudo apt install -y ttf-mscorefonts-installer rar unrar libavcodec-extra gstream
 sudo apt install -y fonts-crosextra-carlito fonts-crosextra-caladea
 
 # greenclip
-sudo cp /home/$USER/debian-gnome/dotscripts/greenclip /usr/local/bin
+#sudo cp /home/$USER/debian-gnome/dotscripts/greenclip /usr/local/bin
 
 # google chrome setup
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
