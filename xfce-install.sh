@@ -8,9 +8,6 @@ if ! [ $(id -u) = 0 ]; then
   exit 1
 fi
 
-cat ./xsessionrc >> /home/$SUDO_USER/.xsessionrc
-chown $SUDO_USER:$SUDO_USER /home/$SUDO_USER/.xsessionrc
-
 apt install -y \
     libxfce4ui-utils \
     thunar \
@@ -29,7 +26,10 @@ apt install -y \
     gpicview \
     xfce4-power-manager \
     network-manager-gnome \
-    xfce4-notifyd
+    xfce4-notifyd \
+    xfce4-clipman \
+    xfce4-clipman-plugin \
+    xterm
 
 echo 
 echo xfce install complete, please reboot and issue 'startx'
