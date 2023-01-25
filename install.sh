@@ -51,10 +51,13 @@ sudo apt install -y ./google-chrome-stable_current_amd64.deb
 rm -f google-chrome-stable_current_amd64.deb
 
 # copy scripts folder
-cp -r /home/$USER/debian-gnome/scripts /home/$USER/
+# cp -r /home/$USER/debian-gnome/scripts /home/$USER/
+
+# libreoffice install
+sudo apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreoffice-writer
 
 # libreoffice sifr theme
-# sudo curl -s https://raw.githubusercontent.com/rizmut/libreoffice-style-sifr/master/install-sifr.sh | sh
+sudo curl -s https://raw.githubusercontent.com/rizmut/libreoffice-style-sifr/master/install-sifr.sh | sh
 
 # copy config files
 cp -r /home/$USER/debian-gnome/dotconfig/* /home/$USER/.config/
