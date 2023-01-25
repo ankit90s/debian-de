@@ -29,7 +29,8 @@ apt install -y \
     xfce4-notifyd \
     xfce4-clipman \
     xfce4-clipman-plugin \
-    xterm
+    xterm \
+    geany
 
 echo 
 echo xfce install complete, please reboot and issue 'startx'
