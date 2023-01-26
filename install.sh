@@ -8,7 +8,7 @@ sudo apt update && sudo apt upgrade -y
 # sudo apt install -y gnome-tweaks
 
 # Applications
-sudo apt install -y curl git wget axel aria2 pip htop kitty neofetch ranger rofi cmatrix espeak ncdu translate-shell rsync exa kdeconnect conky zip unzip
+sudo apt install -y curl git wget axel aria2 pip htop kitty neofetch ranger rofi cmatrix espeak ncdu translate-shell rsync exa kdeconnect conky zip unzip yt-dlp
 
 # redshift
 sudo apt install -y redshift
@@ -31,6 +31,10 @@ fc-cache -fv
 
 # Papirus icon
 sudo apt install -y papirus-icon-theme -t bullseye-backports
+
+# Papirus folder
+wget -qO- https://git.io/papirus-folders-install | sh
+papirus-folders -C green --theme Papirus-Dark
 
 # kde apps theme fix
 sudo apt install -y qt5-style-plugins
