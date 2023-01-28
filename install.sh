@@ -7,8 +7,17 @@ sudo apt update && sudo apt upgrade -y
 # gnome tweaks
 # sudo apt install -y gnome-tweaks
 
-# Applications
-sudo apt install -y curl git wget axel aria2 pip htop kitty neofetch ranger rofi cmatrix espeak ncdu translate-shell rsync exa kdeconnect conky zip unzip yt-dlp
+# Applications and utilities
+sudo apt install -y git pip htop kitty neofetch ranger rofi cmatrix espeak ncdu translate-shell rsync exa kdeconnect conky zip unzip yt-dlp
+
+# Download Managers
+sudo apt install -y curl wget axel aria2
+
+# Network File Tools/System Events
+sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends locate mtp-tools
+
+sudo systemctl enable avahi-daemon
+sudo systemctl enable acpid
 
 # redshift
 sudo apt install -y redshift
