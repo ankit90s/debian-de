@@ -8,7 +8,24 @@ sudo apt update && sudo apt upgrade -y
 # sudo apt install -y gnome-tweaks
 
 # Applications and utilities
-sudo apt install -y git pip htop kitty neofetch ranger rofi cmatrix espeak ncdu translate-shell rsync exa kdeconnect conky zip unzip yt-dlp
+sudo apt install -y git pip kitty ranger cmatrix espeak ncdu translate-shell rsync kdeconnect yt-dlp
+
+# Archiving tools
+sudo apt install -y zip unzip
+
+# EXA file list
+# replace default ls command with the following line in .bashrc file
+# alias ls = exa --long --icons --group-directories-first color=always
+sudo apt install -y exa
+
+# search applications
+sudo apt install -y rofi dmenu
+
+# System Monitors
+sudo apt install -y conky neofetch htop
+
+# Calculator
+sudo apt install -y gnome-calculator
 
 # Download Managers
 sudo apt install -y curl wget axel aria2
@@ -30,7 +47,7 @@ sudo apt install -y neovim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # fonts
-sudo apt install -y fonts-indic fonts-noto-color-emoji fonts-ubuntu fonts-roboto
+sudo apt install -y fonts-indic fonts-noto-color-emoji fonts-ubuntu fonts-roboto fonts-ubuntu
 
 # Material Design Icon Fonts
 wget https://github.com/zavoloklom/material-design-iconic-font/releases/download/2.2.0/material-design-iconic-font.zip
