@@ -1,0 +1,6 @@
+[Added Associations]
+text/plain=geany.desktop;vim.desktop;
+application/x-shellscript=geany.desktop;
+application/pdf=org.gnome.Evince.desktop;
+image/jpeg=gpicview.desktop;
+image/png=gpicview.desktop;
