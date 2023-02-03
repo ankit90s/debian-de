@@ -117,11 +117,9 @@ ${goto 12}${color1}Total Download$alignr$color${totaldown ens33}
 ${goto 12}${color1}Total Upload$alignr$color${totalup ens33}
 
 ${voffset 14}${goto 12}${color0}KEY BINDINGS${goto 50}
-${voffset 4}${goto 12}${color1}[S]+d$alignr$color Application Launcher
-${goto 12}${color1}[S]+w$alignr$color Calculator
-${goto 12}${color1}[S]+q$alignr$color Close window
-${goto 12}${color1}[S]+Enter$alignr$color Terminal
-${goto 12}${color1}[S]+e$alignr$color Emoji-Selector
-${goto 12}${color1}[S]+Alt+r$alignr$color Restart WM
-${goto 12}${color1}[S]+z$alignr$color Power Menu${voffset 4}
+${voffset 4}${goto 12}${color1}Alt+d$alignr$color Application Launcher
+${goto 12}${color1}Alt+d$alignr$color Calculator
+${goto 12}${color1}Alt+F4$alignr$color Close window
+${goto 12}${color1}Alt+e$alignr$color Emoji-Selector
+${goto 12}${color1}Alt+F4$alignr$color Power Menu${voffset 4}
 ]];

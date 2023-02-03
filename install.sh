@@ -1,7 +1,7 @@
 #! /bin/sh
 
 sudo mv /etc/apt/sources.list /etc/apt/sources.list.bkp
-sudo cp /home/$USER/debian-gnome/sources.list /etc/apt/sources.list
+sudo cp /home/$USER/debian-de/sources.list /etc/apt/sources.list
 sudo apt update && sudo apt upgrade -y
 
 # gnome tweaks
@@ -64,7 +64,7 @@ papirus-folders -C green --theme Papirus-Dark
 
 # kde apps theme fix
 sudo apt install -y qt5-style-plugins
-sudo cp /home/$USER/debian-gnome/environment /etc
+sudo cp /home/$USER/debian-de/environment /etc
 
 # Restricted extras
 sudo apt install -y ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
@@ -90,4 +90,4 @@ sudo apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreo
 sudo curl -s https://raw.githubusercontent.com/rizmut/libreoffice-style-sifr/master/install-sifr.sh | sh
 
 # copy config files
-cp -r /home/$USER/debian-gnome/dotconfig/* /home/$USER/.config/
+cp -r /home/$USER/debian-de/dotconfig/* /home/$USER/.config/
