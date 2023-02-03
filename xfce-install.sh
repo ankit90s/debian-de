@@ -30,6 +30,7 @@ apt install -y \
     xfce4-notifyd \
     xfce4-clipman \
     xfce4-clipman-plugin \
+    xfce4-systemload-plugin \
     xterm \
     firefox-esr \
     geany
