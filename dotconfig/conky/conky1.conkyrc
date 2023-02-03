@@ -111,10 +111,10 @@ ${goto 12}${color1}${top_mem name 3}$alignr$color${top_mem mem_res 3}
 ${goto 12}${voffset 14}${color0}${font}FILE SYSTEM$alignr$fs_used of $fs_size
 ${goto 12}${color2}${fs_bar 8,254}
 
-${voffset 9}${goto 12}${color0}NETWORK$alignr${addr ens33}${goto 50}
+${voffset 9}${goto 12}${color0}NETWORK$alignr${addr enp3s0}${goto 50}
 ${goto 12}${color1}Gateway$alignr$color${gw_ip}
-${goto 12}${color1}Total Download$alignr$color${totaldown ens33}
-${goto 12}${color1}Total Upload$alignr$color${totalup ens33}
+${goto 12}${color1}Total Download$alignr$color${totaldown enp3s0}
+${goto 12}${color1}Total Upload$alignr$color${totalup enp3s0}
 
 ${voffset 14}${goto 12}${color0}KEY BINDINGS${goto 50}
 ${voffset 4}${goto 12}${color1}Alt+d$alignr$color Application Launcher
