@@ -18,6 +18,7 @@ apt install -y \
     xfce4-session \
     xfce4-settings \
     xfce4-terminal \
+    thunar-archive-plugin \
     xfconf \
     xfdesktop4 \
     xfwm4 \
