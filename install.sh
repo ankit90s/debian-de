@@ -10,6 +10,9 @@ sudo apt update && sudo apt upgrade -y
 # Applications and utilities
 sudo apt install -y git pip kitty ranger cmatrix espeak ncdu translate-shell rsync kdeconnect yt-dlp
 
+# sensors
+sudo apt install -y lm-sensors hddtemp
+
 # Archiving tools
 sudo apt install -y zip unzip
 
