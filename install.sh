@@ -8,7 +8,7 @@ sudo apt update && sudo apt upgrade -y
 # sudo apt install -y gnome-tweaks
 
 # Applications and utilities
-sudo apt install -y git pip kitty ranger cmatrix espeak ncdu translate-shell rsync kdeconnect yt-dlp
+sudo apt install -y git pip kitty ranger cmatrix espeak ncdu translate-shell rsync kdeconnect yt-dlp gpick
 
 # sensors
 sudo apt install -y lm-sensors hddtemp
