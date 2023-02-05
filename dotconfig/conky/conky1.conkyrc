@@ -77,9 +77,9 @@ conky.config = {
 	own_window_hints = 'undecorated,below,above,sticky,skip_taskbar,skip_pager',  -- if own_window true - just hints - own_window_type sets it
 
 	--catppuccin
-	color0 = '#7A8B2E',
+	color0 = '#3A6C77',
 	color1 = '#E2DFD2',
-	color2 = '#7A8B2E',
+	color2 = '#3A6C77',
 	color3 = '#f0c6c6',
 	color4 = '#6e738d',
     color5 = '#a6da95',
