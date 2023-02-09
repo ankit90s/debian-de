@@ -92,5 +92,9 @@ sudo apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreo
 # libreoffice sifr theme
 sudo curl -s https://raw.githubusercontent.com/rizmut/libreoffice-style-sifr/master/install-sifr.sh | sh
 
+# Add python paths
+echo "uname -sr" >> ~/.bashrc
+echo "eval \"\$(starship init bash)\"" >> ~/.bashrc
+
 # copy config files
 cp -r /home/$USER/debian-de/dotconfig/* /home/$USER/.config/
