@@ -10,6 +10,9 @@ sudo apt update && sudo apt upgrade -y
 # Applications and utilities
 sudo apt install -y git pip kitty ranger cmatrix espeak ncdu translate-shell rsync kdeconnect yt-dlp gpick
 
+# Torrent Management
+sudo apt install -y transmission
+
 # sensors
 sudo apt install -y lm-sensors hddtemp
 
