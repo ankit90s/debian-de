@@ -23,7 +23,7 @@ conky.config = {
     -- Placement (For SINGLE monitor users!)
 	alignment = 'bottom_right',		            -- top_left,top_middle,top_right,bottom_left,bottom_middle,bottom_right,
 	gap_x = 40,								-- pixels between right or left border
-	gap_y = 90,								-- pixels between bottom or left border
+	gap_y = 50,								-- pixels between bottom or left border
 
     -- Size
     minimum_height = 200,						-- minimum height of window
@@ -77,9 +77,9 @@ conky.config = {
 	own_window_hints = 'undecorated,below,above,sticky,skip_taskbar,skip_pager',  -- if own_window true - just hints - own_window_type sets it
 
 	--catppuccin
-	color0 = '#3A6C77',
+    color0 = '#746E57',
 	color1 = '#E2DFD2',
-	color2 = '#3A6C77',
+	color2 = '#746E57',
 	color3 = '#f0c6c6',
 	color4 = '#6e738d',
     color5 = '#a6da95',
