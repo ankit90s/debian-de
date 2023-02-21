@@ -8,7 +8,7 @@ sudo apt update && sudo apt upgrade -y
 # sudo apt install -y gnome-tweaks
 
 # Applications and utilities
-sudo apt install -y git pip kitty ranger cmatrix espeak ncdu translate-shell rsync kdeconnect yt-dlp gpick
+sudo apt install -y git pip ranger cmatrix espeak ncdu translate-shell rsync kdeconnect yt-dlp gpick
 
 # Torrent Management
 sudo apt install -y transmission
@@ -55,6 +55,9 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # fonts
 sudo apt install -y fonts-indic fonts-noto-color-emoji fonts-ubuntu fonts-roboto fonts-ubuntu
 
+# Install plank dock
+sudo apt install -y plank
+
 # Material Design Icon Fonts
 wget https://github.com/zavoloklom/material-design-iconic-font/releases/download/2.2.0/material-design-iconic-font.zip
 sudo unzip material-design-iconic-font.zip -d /usr/share/fonts/
@@ -66,7 +69,7 @@ sudo apt install -y papirus-icon-theme -t bullseye-backports
 
 # Papirus folder
 wget -qO- https://git.io/papirus-folders-install | sh
-papirus-folders -C green --theme Papirus-Dark
+papirus-folders -C yaru --theme Papirus-Dark
 
 # kde apps theme fix
 sudo apt install -y qt5-style-plugins
@@ -95,9 +98,14 @@ sudo apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreo
 # libreoffice sifr theme
 sudo curl -s https://raw.githubusercontent.com/rizmut/libreoffice-style-sifr/master/install-sifr.sh | sh
 
-# Add python paths
-echo "uname -sr" >> ~/.bashrc
-echo "eval \"\$(starship init bash)\"" >> ~/.bashrc
+# copy bashrc and bash_aliases
+cp ~/debian-de/bashrc ~/.bashrc
+cp ~/debian-de/bash_aliases ~/.bash_aliases
 
 # copy config files
 cp -r /home/$USER/debian-de/dotconfig/* /home/$USER/.config/
+
+# install slick greeter
+sudo apt install -y slick-greeter lightdm-gtk-greeter-settings lightdm-settings numlockx
+
+sudo reboot

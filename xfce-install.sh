@@ -17,7 +17,6 @@ apt install -y \
     xfce4-whiskermenu-plugin \
     xfce4-session \
     xfce4-settings \
-    xfce4-terminal \
     thunar-archive-plugin \
     xfconf \
     xfdesktop4 \
@@ -35,6 +34,10 @@ apt install -y \
     firefox-esr \
     geany
 
+# Copy xresources
+cp ~/debian-de/Xresources ~/.Xresources
+
 echo 
 echo xfce install complete, please reboot and issue 'startx'
 echo
+
