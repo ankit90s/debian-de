@@ -23,7 +23,7 @@ conky.config = {
     -- Placement (For SINGLE monitor users!)
 	alignment = 'bottom_right',		            -- top_left,top_middle,top_right,bottom_left,bottom_middle,bottom_right,
 	gap_x = 40,								-- pixels between right or left border
-	gap_y = 50,								-- pixels between bottom or left border
+	gap_y = 90,								-- pixels between bottom or left border
 
     -- Size
     minimum_height = 200,						-- minimum height of window
@@ -117,9 +117,9 @@ ${goto 12}${color1}Total Download$alignr$color${totaldown enp3s0}
 ${goto 12}${color1}Total Upload$alignr$color${totalup enp3s0}
 
 ${voffset 14}${goto 12}${color0}KEY BINDINGS${goto 50}
-${voffset 4}${goto 12}${color1}Alt+d$alignr$color Application Launcher
-${goto 12}${color1}Alt+d$alignr$color Calculator
+${voffset 4}${goto 12}${color1}Alt+D$alignr$color Application Launcher
+${goto 12}${color1}Alt+D$alignr$color Calculator
 ${goto 12}${color1}Alt+F4$alignr$color Close window
-${goto 12}${color1}Alt+e$alignr$color Emoji-Selector
+${goto 12}${color1}Super+E$alignr$color Emoji-Selector
 ${goto 12}${color1}Alt+F4$alignr$color Power Menu${voffset 4}
 ]];
