@@ -8,7 +8,7 @@ fi
 
 # Copy Source file
 mv /etc/apt/sources.list /etc/apt/sources.list.bkp
-cp /home/$USER/debian-de/sources.list /etc/apt/sources.list
+cp $(pwd)/sources.list /etc/apt/sources.list
 apt update && apt upgrade -y
 
 # Applications and utilities
@@ -77,7 +77,7 @@ papirus-folders -C yaru --theme Papirus-Dark
 
 # kde apps theme fix
 apt install -y qt5-style-plugins
-cp /home/$USER/debian-de/environment /etc
+cp $(pwd)/environment /etc
 
 # Restricted extras
 apt install -y ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
@@ -119,18 +119,18 @@ apt install -y \
     firefox-esr
 
 # Copy xresources
-cp ~/debian-de/Xresources ~/.Xresources
+cp $(pwd)/Xresources ~/.Xresources
 
 # copy bashrc and bash_aliases
-cp ~/debian-de/bashrc ~/.bashrc
-cp ~/debian-de/bash_aliases ~/.bash_aliases
+cp $(pwd)/bashrc ~/.bashrc
+cp $(pwd)/bash_aliases ~/.bash_aliases
 
 # copy config files
-cp -r /home/$USER/debian-de/dotconfig/* /home/$USER/.config/
+cp -r $(pwd)/dotconfig/* ~/.config/
 
 # install slick greeter
 apt install -y slick-greeter lightdm-gtk-greeter-settings lightdm-settings numlockx
 
 echo 
-echo xfce install complete, please reboot and issue 'startx'
+echo xfce install complete, Reboot and Enjoy
 echo
