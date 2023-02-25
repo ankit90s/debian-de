@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 ## check for sudo/root
 if ! [ $(id -u) = 0 ]; then
@@ -8,7 +8,7 @@ fi
 
 # Copy Source file
 mv /etc/apt/sources.list /etc/apt/sources.list.bkp
-cp $(pwd)/sources.list /etc/apt/sources.list
+cp sources.list /etc/apt/sources.list
 apt update && apt upgrade -y
 
 # Applications and utilities
@@ -77,7 +77,7 @@ papirus-folders -C yaru --theme Papirus-Dark
 
 # kde apps theme fix
 apt install -y qt5-style-plugins
-cp $(pwd)/environment /etc
+cp environment /etc/environment
 
 # Restricted extras
 apt install -y ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
@@ -119,14 +119,14 @@ apt install -y \
     firefox-esr
 
 # Copy xresources
-cp $(pwd)/Xresources ~/.Xresources
+cp Xresources ~/.Xresources
 
 # copy bashrc and bash_aliases
-cp $(pwd)/bashrc ~/.bashrc
-cp $(pwd)/bash_aliases ~/.bash_aliases
+cp bashrc ~/.bashrc
+cp bash_aliases ~/.bash_aliases
 
 # copy config files
-cp -r $(pwd)/dotconfig/* ~/.config/
+cp -r dotconfig/* ~/.config/
 
 # install slick greeter
 apt install -y slick-greeter lightdm-gtk-greeter-settings lightdm-settings numlockx
