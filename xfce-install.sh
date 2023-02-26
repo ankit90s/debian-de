@@ -130,11 +130,11 @@ cp Xresources /home/$username/.Xresources
 
 # copy bashrc and bash_aliases
 cp bashrc /home/$username/.bashrc
-cp bash_aliases /home/#username/.bash_aliases
+cp bash_aliases /home/$username/.bash_aliases
 
 # copy config files
-mkdir -p /home/$username/.config
-cp -r dotconfig/* /home/$username/.config
+# mkdir -p /home/$username/.config
+# cp -r dotconfig/* /home/$username/.config
 
 # install slick greeter
 apt install -y slick-greeter lightdm-gtk-greeter-settings lightdm-settings numlockx
