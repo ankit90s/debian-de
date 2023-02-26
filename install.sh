@@ -66,9 +66,9 @@ apt install -y fonts-indic fonts-noto-color-emoji fonts-ubuntu fonts-roboto font
 apt install -y plank
 
 # Material Design Icon Fonts
-mkdir -p /usr/share/fonts
+mkdir -p /usr/share/fonts/Material-fonts
 wget https://github.com/zavoloklom/material-design-iconic-font/releases/download/2.2.0/material-design-iconic-font.zip
-unzip material-design-iconic-font.zip -d /usr/share/fonts/
+unzip material-design-iconic-font.zip -d /usr/share/fonts/Material-fonts/
 rm -f material-design-iconic-font.zip
 fc-cache -fv
 
