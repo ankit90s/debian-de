@@ -1,111 +1,144 @@
-#! /bin/sh
+#!/bin/bash
 
-sudo mv /etc/apt/sources.list /etc/apt/sources.list.bkp
-sudo cp /home/$USER/debian-de/sources.list /etc/apt/sources.list
-sudo apt update && sudo apt upgrade -y
+## check for sudo/root
+if ! [ $(id -u) = 0 ]; then
+  echo "This script must run with sudo, try again..."
+  exit 1
+fi
 
-# gnome tweaks
-# sudo apt install -y gnome-tweaks
+# Copy Source file
+mv /etc/apt/sources.list /etc/apt/sources.list.bkp
+cp sources.list /etc/apt/sources.list
+apt update && apt upgrade -y
+
+# Get username
+username=$(id -u -n 1000)
 
 # Applications and utilities
-sudo apt install -y git pip ranger cmatrix espeak ncdu translate-shell rsync kdeconnect yt-dlp gpick
+apt install -y git pip ranger cmatrix espeak ncdu translate-shell rsync kdeconnect yt-dlp gpick
 
 # Torrent Management
-sudo apt install -y transmission
+apt install -y transmission
 
 # sensors
-sudo apt install -y lm-sensors hddtemp
+apt install -y lm-sensors hddtemp
 
 # Archiving tools
-sudo apt install -y zip unzip
+apt install -y zip unzip
 
 # EXA file list
 # replace default ls command with the following line in .bashrc file
 # alias ls = exa --long --icons --group-directories-first color=always
-sudo apt install -y exa
+apt install -y exa
 
 # search applications
-sudo apt install -y rofi dmenu
+apt install -y rofi dmenu
 
 # System Monitors
-sudo apt install -y conky neofetch htop
+apt install -y conky neofetch htop
 
 # Calculator
-sudo apt install -y gnome-calculator
+apt install -y gnome-calculator
 
 # Download Managers
-sudo apt install -y curl wget axel aria2
+apt install -y curl wget axel aria2
 
 # Network File Tools/System Events
-sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends locate mtp-tools
+apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends locate mtp-tools
 
-sudo systemctl enable avahi-daemon
-sudo systemctl enable acpid
+systemctl enable avahi-daemon
+systemctl enable acpid
 
 # redshift
-sudo apt install -y redshift
+apt install -y redshift
 
 # Arc theme
-sudo apt install -y arc-theme
+apt install -y arc-theme
 
 # Text editor
-sudo apt install -y neovim
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+apt install -y neovim geany
+# git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # fonts
-sudo apt install -y fonts-indic fonts-noto-color-emoji fonts-ubuntu fonts-roboto fonts-ubuntu
+apt install -y fonts-indic fonts-noto-color-emoji fonts-ubuntu fonts-roboto fonts-ubuntu
 
 # Install plank dock
-sudo apt install -y plank
+apt install -y plank
 
 # Material Design Icon Fonts
 wget https://github.com/zavoloklom/material-design-iconic-font/releases/download/2.2.0/material-design-iconic-font.zip
-sudo unzip material-design-iconic-font.zip -d /usr/share/fonts/
+unzip material-design-iconic-font.zip -d /usr/share/fonts/
 rm -f material-design-iconic-font.zip
 fc-cache -fv
 
 # Papirus icon
-sudo apt install -y papirus-icon-theme -t bullseye-backports
+apt install -y papirus-icon-theme -t bullseye-backports
 
 # Papirus folder
 wget -qO- https://git.io/papirus-folders-install | sh
 papirus-folders -C yaru --theme Papirus-Dark
 
 # kde apps theme fix
-sudo apt install -y qt5-style-plugins
-sudo cp /home/$USER/debian-de/environment /etc
+apt install -y qt5-style-plugins
+cp environment /etc/environment
 
 # Restricted extras
-sudo apt install -y ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
+apt install -y ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
 
 # Microsoft fonts
-sudo apt install -y fonts-crosextra-carlito fonts-crosextra-caladea
-
-# greenclip
-#sudo cp /home/$USER/debian-gnome/dotscripts/greenclip /usr/local/bin
-
-# google chrome setup
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install -y ./google-chrome-stable_current_amd64.deb
-rm -f google-chrome-stable_current_amd64.deb
-
-# copy scripts folder
-# cp -r /home/$USER/debian-gnome/scripts /home/$USER/
+apt install -y fonts-crosextra-carlito fonts-crosextra-caladea
 
 # libreoffice install
-sudo apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreoffice-writer
+apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreoffice-writer
 
 # libreoffice sifr theme
-sudo curl -s https://raw.githubusercontent.com/rizmut/libreoffice-style-sifr/master/install-sifr.sh | sh
+curl -s https://raw.githubusercontent.com/rizmut/libreoffice-style-sifr/master/install-sifr.sh | sh
+
+## Xfce4 installation
+apt install -y \
+    libxfce4ui-utils \
+    thunar \
+    xfce4-appfinder \
+    xfce4-panel \
+    xfce4-pulseaudio-plugin \
+    xfce4-whiskermenu-plugin \
+    xfce4-session \
+    xfce4-settings \
+    thunar-archive-plugin \
+    xfconf \
+    xfdesktop4 \
+    xfwm4 \
+    xfce4-screenshooter \
+    evince \
+    gpicview \
+    xfce4-power-manager \
+    network-manager-gnome \
+    xfce4-notifyd \
+    xfce4-clipman \
+    xfce4-clipman-plugin \
+    xfce4-systemload-plugin \
+    xfce4-terminal \
+    xterm \
+    firefox-esr
+
+# Create folders in user directory (eg. Documents,Downloads,etc.)
+xdg-user-dirs-update
+
+# Copy xresources
+cp Xresources /home/$username/.Xresources
+# cp Xresources ~/.Xresources
 
 # copy bashrc and bash_aliases
-cp ~/debian-de/bashrc ~/.bashrc
-cp ~/debian-de/bash_aliases ~/.bash_aliases
+cp bashrc /home/$username/.bashrc
+cp bash_aliases /home/$username/.bash_aliases
 
 # copy config files
-cp -r /home/$USER/debian-de/dotconfig/* /home/$USER/.config/
+# mkdir -p /home/$username/.config
+# cp -r dotconfig/* /home/$username/.config
 
 # install slick greeter
-sudo apt install -y slick-greeter lightdm-gtk-greeter-settings lightdm-settings numlockx
+apt install -y slick-greeter lightdm-gtk-greeter-settings lightdm-settings numlockx
 
-sudo reboot
+echo 
+echo xfce install complete, Reboot and Enjoy
+echo
