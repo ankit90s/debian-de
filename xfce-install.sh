@@ -11,6 +11,9 @@ mv /etc/apt/sources.list /etc/apt/sources.list.bkp
 cp sources.list /etc/apt/sources.list
 apt update && apt upgrade -y
 
+# Get username
+username=$(id -u -n 1000)
+
 # Applications and utilities
 apt install -y git pip ranger cmatrix espeak ncdu translate-shell rsync kdeconnect yt-dlp gpick
 
@@ -118,15 +121,19 @@ apt install -y \
     xterm \
     firefox-esr
 
+# Create folders in user directory (eg. Documents,Downloads,etc.)
+xdg-user-dirs-update
+
 # Copy xresources
-cp Xresources ~/.Xresources
+cp Xresources /home/$username/.Xresources
+# cp Xresources ~/.Xresources
 
 # copy bashrc and bash_aliases
-cp bashrc ~/.bashrc
-cp bash_aliases ~/.bash_aliases
+cp bashrc /home/$username/.bashrc
+cp bash_aliases /home/#username/.bash_aliases
 
 # copy config files
-cp -r dotconfig/* ~/.config/
+cp -r dotconfig/* /home/$username/.config
 
 # install slick greeter
 apt install -y slick-greeter lightdm-gtk-greeter-settings lightdm-settings numlockx
