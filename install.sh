@@ -120,6 +120,7 @@ apt install -y \
     xfce4-systemload-plugin \
     xfce4-terminal \
     xterm \
+    mugshot \
     firefox-esr
 
 # Create folders in user directory (eg. Documents,Downloads,etc.)
