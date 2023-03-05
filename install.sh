@@ -123,6 +123,11 @@ apt install -y \
     mugshot \
     firefox-esr
 
+# setup starship
+wget https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-musl.tar.gz
+tar -xvzf starship-x86_64-unknown-linux-musl.tar.gz
+mv starship /usr/local/bin
+
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
 
