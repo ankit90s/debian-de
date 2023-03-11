@@ -140,15 +140,6 @@ cp Xresources /home/$username/.Xresources
 cp bashrc /home/$username/.bashrc
 cp bash_aliases /home/$username/.bash_aliases
 
-# copy config files
-mkdir -p /home/$username/.config
-git clone https://github.com/ankit90s/dotconfig
-cd dotconfig && cp -r * /home/$username/.config
-cd /home/$username/debian-de
-rm -rf dotconfig
-
-# cp -r dotconfig/* /home/$username/.config
-
 # install slick greeter
 apt install -y slick-greeter lightdm-gtk-greeter-settings lightdm-settings numlockx
 
