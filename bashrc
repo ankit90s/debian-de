@@ -111,5 +111,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export PATH="/home/$USER/.local/bin:$PATH"
 uname -sr
 eval "$(starship init bash)"
+. "$HOME/.cargo/env"
+source ~/.bash_completion/alacritty
