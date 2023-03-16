@@ -129,9 +129,6 @@ tar -xvzf starship-x86_64-unknown-linux-musl.tar.gz
 mv starship /usr/local/bin
 rm starship-x86_64-unknown-linux-musl.tar.gz
 
-# Create folders in user directory (eg. Documents,Downloads,etc.)
-xdg-user-dirs-update
-
 # Copy xresources
 cp Xresources /home/$username/.Xresources
 # cp Xresources ~/.Xresources
