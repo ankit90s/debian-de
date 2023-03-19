@@ -134,7 +134,7 @@ cp Xresources /home/$username/.Xresources
 # cp Xresources ~/.Xresources
 
 # copy bashrc and bash_aliases
-cp bashrc /home/$username/.bashrc
+# cp bashrc /home/$username/.bashrc
 cp bash_aliases /home/$username/.bash_aliases
 
 # install slick greeter
