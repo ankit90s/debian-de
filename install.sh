@@ -73,7 +73,7 @@ rm -f material-design-iconic-font.zip
 fc-cache -fv
 
 # Papirus icon
-apt install -y papirus-icon-theme -t bullseye-backports
+apt install -y papirus-icon-theme
 
 # Papirus folder
 wget -qO- https://git.io/papirus-folders-install | sh
