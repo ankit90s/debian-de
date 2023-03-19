@@ -89,6 +89,9 @@ apt install -y ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0
 # Microsoft fonts
 apt install -y fonts-crosextra-carlito fonts-crosextra-caladea
 
+# Docklike dependencies
+sudo apt install xfce4-dev-tools libstartup-notification0-dev libwnck-3-dev libxfce4ui-2-dev libxfce4panel-2.0-dev
+
 # libreoffice install
 apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreoffice-writer
 
@@ -120,6 +123,7 @@ apt install -y \
     xfce4-systemload-plugin \
     xfce4-terminal \
     xterm \
+    alacritty \
     mugshot \
     firefox-esr
 
@@ -134,7 +138,7 @@ cp Xresources /home/$username/.Xresources
 # cp Xresources ~/.Xresources
 
 # copy bashrc and bash_aliases
-# cp bashrc /home/$username/.bashrc
+cp bashrc /home/$username/.bashrc
 cp bash_aliases /home/$username/.bash_aliases
 
 # install slick greeter
