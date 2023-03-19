@@ -54,6 +54,9 @@ apt install -y arc-theme
 apt install -y neovim geany
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+# Media Player
+apt install -y mpv
+
 # fonts
 apt install -y fonts-indic fonts-noto-color-emoji fonts-ubuntu fonts-roboto fonts-ubuntu
 
