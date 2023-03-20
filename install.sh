@@ -29,19 +29,16 @@ apt install -y \
     xfdesktop4 \
     xfwm4 \
     xfce4-screenshooter \
-    evince \
-    gpicview \
     xfce4-power-manager \
     network-manager-gnome \
     xfce4-notifyd \
     xfce4-clipman \
     xfce4-clipman-plugin \
     xfce4-systemload-plugin \
-    xfce4-terminal \
-    xterm \
-    alacritty \
-    mugshot \
-    firefox-esr
+    xfce4-terminal
+
+# Other essential packages
+apt install -y alacritty evince gpicview xterm firefox-esr exa mugshot menulibre
 
 # setup starship
 wget https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-musl.tar.gz

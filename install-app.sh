@@ -21,11 +21,6 @@ apt install -y lm-sensors hddtemp
 # Archiving tools
 apt install -y zip unzip
 
-# EXA file list
-# replace default ls command with the following line in .bashrc file
-# alias ls = exa --long --icons --group-directories-first color=always
-apt install -y exa
-
 # search applications
 apt install -y rofi dmenu
 
