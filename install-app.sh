@@ -6,8 +6,9 @@ if ! [ $(id -u) = 0 ]; then
   exit 1
 fi
 
-# Get username
+# Get username and make buliddr
 username=$(id -u -n 1000)
+builddr=$(pwd)
 
 # Applications and utilities
 apt install -y git pip ranger cmatrix espeak ncdu translate-shell rsync kdeconnect yt-dlp gpick
@@ -98,11 +99,11 @@ curl -s https://raw.githubusercontent.com/rizmut/libreoffice-style-sifr/master/i
 apt install -y nvidia-detect
 
 # config files
+cd /home/$username
 git clone https://github.com/ankit90s/dotconfig && cd dotconfig
+chown -R $username:$username *
 cp -r * /home/$username/.config
-chown -R $username:$username /home/$username/.config/*
-cd ..
-rm -rf dotconfig
+cd $builddr
 
 # install build tools
 apt install -y build-essential linux-headers-$(uname -r)
