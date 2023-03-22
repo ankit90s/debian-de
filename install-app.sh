@@ -47,7 +47,7 @@ apt install -y arc-theme
 
 # Text editor
 apt install -y neovim geany
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git /home/$username/.vim/bundle/Vundle.vim
 
 # Media Player
 apt install -y mpv
@@ -66,7 +66,7 @@ rm -f material-design-iconic-font.zip
 fc-cache -fv
 
 # Papirus icon
-apt install -y papirus-icon-theme
+apt install -y papirus-icon-theme -t bullseye-backports
 
 # Papirus folder
 wget -qO- https://git.io/papirus-folders-install | sh
@@ -83,7 +83,10 @@ apt install -y ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0
 apt install -y fonts-crosextra-carlito fonts-crosextra-caladea
 
 # Docklike dependencies
-apt install xfce4-dev-tools libstartup-notification0-dev libwnck-3-dev libxfce4ui-2-dev libxfce4panel-2.0-dev
+apt install -y xfce4-dev-tools libstartup-notification0-dev libwnck-3-dev libxfce4ui-2-dev libxfce4panel-2.0-dev
+
+# Alacritty Dependencies
+apt install -y cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
 
 # libreoffice install
 apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreoffice-writer
@@ -97,6 +100,7 @@ apt install -y nvidia-detect
 # config files
 git clone https://github.com/ankit90s/dotconfig && cd dotconfig
 cp -r * /home/$username/.config
+chown -R $username:$username /home/$username/.config/*
 cd ..
 rm -rf dotconfig
 
