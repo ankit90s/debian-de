@@ -83,8 +83,15 @@ apt install -y ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0
 # Microsoft fonts
 apt install -y fonts-crosextra-carlito fonts-crosextra-caladea
 
-# Docklike dependencies
+# Docklike
 apt install -y xfce4-dev-tools libstartup-notification0-dev libwnck-3-dev libxfce4ui-2-dev libxfce4panel-2.0-dev
+cd /home/$username
+git clone https://github.com/nsz32/docklike-plugin &&  cd docklike-plugin
+./autogen.sh
+make
+make install
+cd /home/$username && rm -rf docklike-plugin
+cd $builddr
 
 # Alacritty Dependencies
 apt install -y cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
@@ -101,8 +108,8 @@ apt install -y nvidia-detect
 # config files
 cd /home/$username
 git clone https://github.com/ankit90s/dotconfig && cd dotconfig
-chown -R $username:$username *
 cp -r * /home/$username/.config
+chown -R $username:$username /home/$username
 cd $builddr
 
 # install build tools
