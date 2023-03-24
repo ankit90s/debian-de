@@ -37,11 +37,10 @@ apt install -y \
     xfce4-notifyd \
     xfce4-clipman \
     xfce4-clipman-plugin \
-    xfce4-systemload-plugin \
-    terminator
+    xfce4-systemload-plugin
 
 # Other essential packages
-apt install -y evince gpicview xterm firefox-esr exa mugshot menulibre
+apt install -y terminator evince gpicview xterm firefox-esr exa mugshot menulibre
 
 # setup starship
 wget https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-musl.tar.gz
