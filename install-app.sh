@@ -53,18 +53,8 @@ git clone https://github.com/VundleVim/Vundle.vim.git /home/$username/.vim/bundl
 # Media Player
 apt install -y mpv
 
-# fonts
-apt install -y fonts-indic fonts-noto-color-emoji fonts-ubuntu fonts-roboto fonts-ubuntu
-
 # Install plank dock
 # apt install -y plank
-
-# Material Design Icon Fonts
-mkdir -p /usr/share/fonts/Material-fonts
-wget https://github.com/zavoloklom/material-design-iconic-font/releases/download/2.2.0/material-design-iconic-font.zip
-unzip material-design-iconic-font.zip -d /usr/share/fonts/Material-fonts/
-rm -f material-design-iconic-font.zip
-fc-cache -fv
 
 # Papirus icon
 apt install -y papirus-icon-theme -t bullseye-backports
@@ -79,9 +69,6 @@ cp environment /etc/environment
 
 # Restricted extras
 apt install -y ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
-
-# Microsoft fonts
-apt install -y fonts-crosextra-carlito fonts-crosextra-caladea
 
 # Docklike
 apt install -y xfce4-dev-tools libstartup-notification0-dev libwnck-3-dev libxfce4ui-2-dev libxfce4panel-2.0-dev
@@ -114,4 +101,3 @@ cd $builddr
 
 # install build tools
 apt install -y build-essential linux-headers-$(uname -r)
-
