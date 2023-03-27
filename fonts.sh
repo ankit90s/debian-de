@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script can bw used install user specific fonts and nerdfonts of choice.
+# This script can be used to install user specific fonts and nerdfonts of one's choice.
 
 ## check for sudo/root
 if ! [ $(id -u) = 0 ]; then
