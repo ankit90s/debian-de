@@ -20,7 +20,7 @@ apt install -y transmission
 apt install -y lm-sensors hddtemp
 
 # Archiving tools
-apt install -y zip unzip
+apt install -y zip unzip p7zip-full
 
 # search applications
 apt install -y rofi dmenu
