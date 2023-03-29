@@ -13,6 +13,9 @@ builddr=$(pwd)
 # Applications and utilities
 apt install -y git pip ranger cmatrix espeak ncdu translate-shell rsync kdeconnect yt-dlp gpick
 
+# Dictionary
+apt install -y gnome-dictionary
+
 # Torrent Management
 apt install -y transmission
 
