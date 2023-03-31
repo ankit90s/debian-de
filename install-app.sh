@@ -95,10 +95,6 @@ curl -s https://raw.githubusercontent.com/rizmut/libreoffice-style-sifr/master/i
 # install nvidia detect
 apt install -y nvidia-detect
 
-# add custom xfce4 settings
-rm -rf  /home/$username/.config/xfce4
-cp -r /home/$username/debian-de/xfce4 /home/$username/.config
-
 # config files
 cd /home/$username
 git clone https://github.com/ankit90s/dotconfig && cd dotconfig
