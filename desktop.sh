@@ -40,7 +40,7 @@ apt install -y \
     xfce4-systemload-plugin
 
 # Other essential packages
-apt install -y terminator evince gpicview xterm firefox-esr exa mugshot menulibre
+apt install -y evince gpicview xterm firefox-esr exa mugshot menulibre alacritty nvidia-detect
 
 # setup starship
 wget https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-musl.tar.gz
@@ -56,8 +56,18 @@ cp Xresources /home/$username/.Xresources
 cp bashrc /home/$username/.bashrc
 cp bash_aliases /home/$username/.bash_aliases
 
+# wallpapers
+./wallpaper.sh
+
 # install slick greeter
 apt install -y slick-greeter lightdm-gtk-greeter-settings lightdm-settings numlockx
+rm -rf /etc/lightdm
+cp -r settings/lightdm /etc
+
+# Copy grub file
+rm /etc/default/grub
+cp settings/grub /etc/default
+sudo update-grub
 
 echo 
 echo xfce install complete, Reboot and Enjoy

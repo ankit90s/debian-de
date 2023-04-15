@@ -60,7 +60,7 @@ apt install -y mpv
 # apt install -y plank
 
 # Papirus icon
-apt install -y papirus-icon-theme -t bullseye-backports
+apt install -y papirus-icon-theme
 
 # Papirus folder
 wget -qO- https://git.io/papirus-folders-install | sh
@@ -92,9 +92,6 @@ apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreoffice
 # libreoffice sifr theme
 curl -s https://raw.githubusercontent.com/rizmut/libreoffice-style-sifr/master/install-sifr.sh | sh
 
-# install nvidia detect
-apt install -y nvidia-detect
-
 # config files
 cd /home/$username
 git clone https://github.com/ankit90s/dotconfig && cd dotconfig
@@ -102,5 +99,8 @@ cp -r * /home/$username/.config
 chown -R $username:$username /home/$username
 cd $builddr
 
+# install deb package
+apt install -y ./debs/*.deb
+
 # install build tools
-apt install -y build-essential linux-headers-$(uname -r)
+apt install -y build-essential linux-headers-$(uname -r) intel-microcode
