@@ -83,6 +83,11 @@ make install
 cd /home/$username && rm -rf docklike-plugin
 cd $builddr
 
+# fast-cli
+wget https://github.com/ddo/fast/releases/download/v0.0.4/fast_linux_amd64 -O fast
+chmod +x fast
+mv fast /usr/local/bin
+
 # Alacritty Dependencies
 apt install -y cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
 
