@@ -62,6 +62,11 @@ apt install -y mpv
 # Papirus icon
 apt install -y papirus-icon-theme
 
+# Goolge Chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+apt install ./google-chrome-stable_current_amd64.deb
+rm google-chrome-stable_current_amd64.deb
+
 # Papirus folder
 wget -qO- https://git.io/papirus-folders-install | sh
 papirus-folders -C yaru --theme Papirus-Dark
