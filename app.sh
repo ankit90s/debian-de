@@ -49,6 +49,13 @@ apt install -y redshift
 # Arc theme
 apt install -y arc-theme
 
+# Colloid theme
+git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
+cd Colloid-gtk-theme
+./install.sh --tweaks dracula
+./install.sh
+cd .. && rm -rf Colloid-gtk-theme
+
 # Text editor
 apt install -y neovim geany
 git clone https://github.com/VundleVim/Vundle.vim.git /home/$username/.vim/bundle/Vundle.vim
@@ -64,7 +71,7 @@ apt install -y papirus-icon-theme
 
 # Goolge Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-apt install ./google-chrome-stable_current_amd64.deb
+apt install -y ./google-chrome-stable_current_amd64.deb
 rm google-chrome-stable_current_amd64.deb
 
 # Papirus folder
@@ -94,7 +101,7 @@ chmod +x fast
 mv fast /usr/local/bin
 
 # Alacritty Dependencies
-apt install -y cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
+# apt install -y cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
 
 # libreoffice install
 apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreoffice-writer
