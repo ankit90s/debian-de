@@ -52,8 +52,8 @@ apt install -y arc-theme
 # Colloid theme
 git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
 cd Colloid-gtk-theme
-./install.sh --tweaks dracula
-./install.sh
+./install.sh -d /usr/share/themes --tweaks dracula
+./install.sh -d /usr/share/themes
 cd .. && rm -rf Colloid-gtk-theme
 
 # Text editor
