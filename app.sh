@@ -49,6 +49,9 @@ apt install -y redshift
 # Arc theme
 apt install -y arc-theme
 
+# dconf editor
+apt install -y dconf-editor
+
 # Colloid theme
 git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
 cd Colloid-gtk-theme
