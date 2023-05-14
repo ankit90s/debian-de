@@ -48,6 +48,9 @@ tar -xvzf starship-x86_64-unknown-linux-musl.tar.gz
 mv starship /usr/local/bin
 rm starship-x86_64-unknown-linux-musl.tar.gz
 
+# onboard keyboard
+apt install -y onboard
+
 # Copy xresources
 cp Xresources /home/$username/.Xresources
 # cp Xresources ~/.Xresources
