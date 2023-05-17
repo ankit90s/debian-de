@@ -53,6 +53,7 @@ apt install -y arc-theme
 apt install -y dconf-editor
 
 # Colloid theme
+apt install -y gtk2-engines-murrine
 git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
 cd Colloid-gtk-theme
 ./install.sh -d /usr/share/themes --tweaks dracula
