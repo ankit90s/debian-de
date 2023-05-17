@@ -40,19 +40,31 @@ apt install -y \
     xfce4-systemload-plugin
 
 # Other essential packages
-apt install -y evince gpicview xterm firefox-esr exa mugshot menulibre alacritty nvidia-detect
+apt install -y xterm exa mugshot menulibre nvidia-detect
+
+# Browser
+apt install -y firefox-esr
+
+# PDF viewer
+apt install -y evince
+
+# image viewer
+apt install -y gpicview
 
 # cursor
 apt install -y bibata-cursor-theme
+
+# terminal of choice
+apt install -y alacritty
+
+# onboard keyboard
+apt install -y onboard
 
 # setup starship
 wget https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-musl.tar.gz
 tar -xvzf starship-x86_64-unknown-linux-musl.tar.gz
 mv starship /usr/local/bin
 rm starship-x86_64-unknown-linux-musl.tar.gz
-
-# onboard keyboard
-apt install -y onboard
 
 # Copy xresources
 cp Xresources /home/$username/.Xresources
