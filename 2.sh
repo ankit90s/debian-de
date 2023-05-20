@@ -37,30 +37,8 @@ apt install -y qalculate
 # Download Managers
 apt install -y curl wget axel aria2
 
-# Network File Tools/System Events
-apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends locate mtp-tools
-
-systemctl enable avahi-daemon
-systemctl enable acpid
-
 # redshift
 apt install -y redshift
-
-# Arc theme
-apt install -y arc-theme
-
-# dconf editor
-apt install -y dconf-editor
-
-# Colloid theme
-apt install -y gtk2-engines-murrine
-git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
-cd Colloid-gtk-theme
-./install.sh -d /usr/share/themes --tweaks dracula
-./install.sh -d /usr/share/themes --tweaks nord
-./install.sh -d /usr/share/themes
-./install.sh -d /usr/share/themes -t green
-cd .. && rm -rf Colloid-gtk-theme
 
 # Text editor
 apt install -y neovim geany
@@ -72,24 +50,10 @@ apt install -y mpv
 # Install plank dock
 # apt install -y plank
 
-# Papirus icon
-apt install -y papirus-icon-theme
-
 # Goolge Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 apt install -y ./google-chrome-stable_current_amd64.deb
 rm google-chrome-stable_current_amd64.deb
-
-# Papirus folder
-wget -qO- https://git.io/papirus-folders-install | sh
-papirus-folders -C yaru --theme Papirus-Dark
-
-# kde apps theme fix
-apt install -y qt5-style-plugins
-cp environment /etc/environment
-
-# Restricted extras
-apt install -y ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
 
 # Docklike
 apt install -y xfce4-dev-tools libstartup-notification0-dev libwnck-3-dev libxfce4ui-2-dev libxfce4panel-2.0-dev
@@ -112,9 +76,6 @@ mv fast /usr/local/bin
 # libreoffice install
 apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreoffice-writer
 
-# libreoffice sifr theme
-curl -s https://raw.githubusercontent.com/rizmut/libreoffice-style-sifr/master/install-sifr.sh | sh
-
 # config files
 cd /home/$username
 git clone https://github.com/ankit90s/dotconfig && cd dotconfig
@@ -124,6 +85,3 @@ cd $builddr
 
 # install deb package
 apt install -y ./debs/*.deb
-
-# install build tools
-apt install -y build-essential linux-headers-$(uname -r) intel-microcode
