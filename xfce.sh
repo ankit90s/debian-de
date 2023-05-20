@@ -14,9 +14,6 @@ apt update && apt upgrade -y
 # Get username
 username=$(id -u -n 1000)
 
-# install gnome
-# apt install -y gnome-core
-
 ## Xfce4 installation
 apt install -y \
     libxfce4ui-utils \
