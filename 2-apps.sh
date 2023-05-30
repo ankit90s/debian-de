@@ -50,6 +50,11 @@ apt install -y mpv
 # Install plank dock
 # apt install -y plank
 
+# ani-cli
+git clone "https://github.com/pystardust/ani-cli.git"
+install ani-cli/ani-cli /usr/local/bin
+rm -rf ani-cli
+
 # Goolge Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 apt install -y ./google-chrome-stable_current_amd64.deb
