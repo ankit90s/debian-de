@@ -13,18 +13,26 @@ builddr=$(pwd)
 # Arc theme
 apt install -y arc-theme
 
+# dependencies
+apt install -y apt-get install gtk2-engines-murrine gtk2-engines-pixbuf
+
 # dconf editor
 apt install -y dconf-editor
 
 # Colloid theme
-apt install -y gtk2-engines-murrine
-git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
-cd Colloid-gtk-theme
-./install.sh -d /usr/share/themes --tweaks dracula
-./install.sh -d /usr/share/themes --tweaks nord
-./install.sh -d /usr/share/themes
-./install.sh -d /usr/share/themes -t green
-cd .. && rm -rf Colloid-gtk-theme
+# git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
+# cd Colloid-gtk-theme
+# ./install.sh -d /usr/share/themes --tweaks dracula
+# ./install.sh -d /usr/share/themes --tweaks nord
+# ./install.sh -d /usr/share/themes
+# ./install.sh -d /usr/share/themes -t green
+# cd .. && rm -rf Colloid-gtk-theme
+
+# Qogir themes
+git clone https://github.com/vinceliuice/Qogir-theme.git
+cd Qogir-theme
+./install.sh -d /usr/share/themes --tweaks image square round
+cd .. && rm -rf Qogir-theme
 
 # Papirus icon
 apt install -y papirus-icon-theme
