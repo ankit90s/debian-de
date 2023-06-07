@@ -40,6 +40,9 @@ apt install -y curl wget axel aria2
 # redshift
 apt install -y redshift
 
+# mintstick
+apt install mintstick
+
 # Text editor
 apt install -y neovim geany
 git clone https://github.com/VundleVim/Vundle.vim.git /home/$username/.vim/bundle/Vundle.vim
