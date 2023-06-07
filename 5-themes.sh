@@ -29,10 +29,10 @@ apt install -y dconf-editor
 # cd .. && rm -rf Colloid-gtk-theme
 
 # Qogir themes
-git clone https://github.com/vinceliuice/Qogir-theme.git
-cd Qogir-theme
-./install.sh -d /usr/share/themes --tweaks image square round
-cd .. && rm -rf Qogir-theme
+# git clone https://github.com/vinceliuice/Qogir-theme.git
+# cd Qogir-theme
+# ./install.sh -d /usr/share/themes --tweaks image square round
+# cd .. && rm -rf Qogir-theme
 
 # Papirus icon
 apt install -y papirus-icon-theme
