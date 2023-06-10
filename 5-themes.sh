@@ -46,4 +46,4 @@ apt install -y qt5-style-plugins
 cp environment /etc/environment
 
 # libreoffice sifr theme
-curl -s https://raw.githubusercontent.com/rizmut/libreoffice-style-sifr/master/install-sifr.sh | sh
+apt install -y libreoffice-style-sifr

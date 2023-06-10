@@ -19,7 +19,7 @@ apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends lo
 systemctl enable avahi-daemon
 systemctl enable acpid
 
-apt install mesa-vulkan-drivers libvulkan1 vulkan-tools vulkan-validationlayers
+apt install -y mesa-vulkan-drivers libvulkan1 vulkan-tools vulkan-validationlayers
 
 # install build tools
 apt install -y build-essential linux-headers-$(uname -r) intel-microcode
