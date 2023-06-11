@@ -14,7 +14,7 @@ builddr=$(pwd)
 apt install -y arc-theme
 
 # dependencies
-apt install -y apt-get install gtk2-engines-murrine gtk2-engines-pixbuf
+apt install -y gtk2-engines-murrine gtk2-engines-pixbuf
 
 # dconf editor
 apt install -y dconf-editor

@@ -41,7 +41,7 @@ apt install -y curl wget axel aria2
 apt install -y redshift
 
 # mintstick
-apt install mintstick
+apt install -y mintstick
 
 # Text editor
 apt install -y neovim geany
