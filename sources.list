@@ -11,5 +11,5 @@ deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free non-fre
 # deb-src http://deb.debian.org/debian/ bookworm-updates main contrib non-free non-free-firmware
 
 # Backports
-# deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware
 # deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware
