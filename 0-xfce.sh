@@ -49,7 +49,7 @@ apt install -y evince
 apt install -y gpicview
 
 # cursor
-apt install -y bibata-cursor-theme
+apt install -y bibata-cursor-theme dmz-cursor-theme
 
 # terminal of choice
 apt install -y alacritty
