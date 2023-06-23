@@ -44,14 +44,14 @@ apt install -y redshift
 apt install -y mintstick
 
 # Text editor
-apt install -y neovim geany
-git clone https://github.com/VundleVim/Vundle.vim.git /home/$username/.vim/bundle/Vundle.vim
+apt install -y geany micro
+# git clone https://github.com/VundleVim/Vundle.vim.git /home/$username/.vim/bundle/Vundle.vim
 
 # Media Player
 apt install -y mpv
 
 # Install plank dock
-# apt install -y plank
+apt install -y plank
 
 # ani-cli
 git clone "https://github.com/pystardust/ani-cli.git"
@@ -77,9 +77,6 @@ cd $builddr
 wget https://github.com/ddo/fast/releases/download/v0.0.4/fast_linux_amd64 -O fast
 chmod +x fast
 mv fast /usr/local/bin
-
-# Alacritty Dependencies
-# apt install -y cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
 
 # libreoffice install
 apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreoffice-writer
