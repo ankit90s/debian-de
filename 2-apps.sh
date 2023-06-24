@@ -20,7 +20,7 @@ apt install -y gnome-dictionary
 apt install -y transmission
 
 # sensors
-apt install -y lm-sensors hddtemp
+apt install -y lm-sensors
 
 # Archiving tools
 apt install -y zip unzip p7zip-full
