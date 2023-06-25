@@ -1,5 +1,5 @@
 # nvim Alias
-alias vi='nvim'
+alias vi='micro'
 
 # clear screen alias
 alias c='clear && uname -rs'
@@ -25,3 +25,6 @@ alias singapore='TZ='Asia/Singapore' date'
 # music
 # alias romance="mpv --no-video https://youtu.be/3M9Oh4Hq1qE"
 alias romance="mpv https://youtu.be/3M9Oh4Hq1qE"
+
+# git commit
+alias commit='git commit -m \"updates\" '
