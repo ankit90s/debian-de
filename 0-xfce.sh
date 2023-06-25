@@ -73,7 +73,7 @@ cp bashrc /home/$username/.bashrc
 cp bash_aliases /home/$username/.bash_aliases
 
 # wallpapers
-./wallpaper.sh
+./4-wallpaper.sh
 
 # install slick greeter
 apt install -y slick-greeter lightdm-gtk-greeter-settings lightdm-settings numlockx
