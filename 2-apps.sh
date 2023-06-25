@@ -90,3 +90,9 @@ cd $builddr
 
 # install deb package
 apt install -y ./debs/*.deb
+
+echo 
+echo Rebooting Now
+echo
+
+reboot

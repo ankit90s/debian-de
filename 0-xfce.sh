@@ -86,5 +86,7 @@ cp settings/grub /etc/default
 sudo update-grub
 
 echo 
-echo xfce install complete, Reboot and Enjoy
+echo xfce install complete, Rebooting Now
 echo
+
+reboot

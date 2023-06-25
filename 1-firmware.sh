@@ -23,3 +23,9 @@ apt install -y mesa-vulkan-drivers libvulkan1 vulkan-tools vulkan-validationlaye
 
 # install build tools
 apt install -y build-essential linux-headers-$(uname -r) intel-microcode
+
+echo 
+echo Rebooting Now
+echo
+
+reboot
