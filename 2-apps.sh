@@ -80,6 +80,7 @@ mv fast /usr/local/bin
 
 # libreoffice install
 apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreoffice-writer
+apt install -y libreoffice-style*
 
 # config files
 cd /home/$username
