@@ -151,5 +151,6 @@ fi
 }
 
 export PATH="/home/$USER/.local/bin:$PATH"
-uname -sr
+# uname -sr
+clear && pfetch
 eval "$(starship init bash)"
