@@ -27,6 +27,7 @@ fonts=(
 "JetBrainsMono" 
 "RobotoMono" 
 "UbuntuMono"
+"SauceCodePro"
 )
 
 for font in ${fonts[@]}
