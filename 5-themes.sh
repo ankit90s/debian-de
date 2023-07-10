@@ -10,14 +10,17 @@ fi
 username=$(id -u -n 1000)
 builddr=$(pwd)
 
-# Arc theme
-apt install -y arc-theme
-
 # dependencies
 apt install -y gtk2-engines-murrine gtk2-engines-pixbuf
 
 # dconf editor
 apt install -y dconf-editor
+
+# Arc theme
+apt install -y arc-theme
+
+# Materia theme
+apt install -y materia-gtk-theme
 
 # Colloid theme
 # git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
