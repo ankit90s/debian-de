@@ -44,8 +44,8 @@ apt install -y redshift
 apt install -y mintstick
 
 # Text editor
-apt install -y geany micro
-# git clone https://github.com/VundleVim/Vundle.vim.git /home/$username/.vim/bundle/Vundle.vim
+apt install -y geany micro neovim
+git clone https://github.com/VundleVim/Vundle.vim.git /home/$username/.vim/bundle/Vundle.vim
 
 # Media Player
 apt install -y mpv
@@ -88,9 +88,6 @@ git clone https://github.com/ankit90s/dotconfig && cd dotconfig
 cp -r * /home/$username/.config
 chown -R $username:$username /home/$username
 cd $builddr
-
-# install deb package
-apt install -y ./debs/*.deb
 
 echo 
 echo Rebooting Now
