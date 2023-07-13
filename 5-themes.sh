@@ -22,6 +22,9 @@ apt install -y arc-theme
 # Materia theme
 apt install -y materia-gtk-theme
 
+# mint themes
+apt install -y /home/$username/debian-de/deb/*.deb
+
 # Colloid theme
 # git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
 # cd Colloid-gtk-theme
