@@ -78,6 +78,11 @@ mkdir /home/$username/ISOs
 # wallpapers
 ./4-wallpaper.sh
 
+# pfetch
+git clone https://github.com/dylanaraps/pfetch.git
+cd pfetch
+install pfetch /usr/local/bin
+
 # install slick greeter
 apt install -y slick-greeter lightdm-gtk-greeter-settings lightdm-settings numlockx
 rm -rf /etc/lightdm
