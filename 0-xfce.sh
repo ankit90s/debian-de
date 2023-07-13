@@ -72,6 +72,9 @@ cp Xresources /home/$username/.Xresources
 cp bashrc /home/$username/.bashrc
 cp bash_aliases /home/$username/.bash_aliases
 
+# mkdir
+mkdir /home/$username/ISOs
+
 # wallpapers
 ./4-wallpaper.sh
 
