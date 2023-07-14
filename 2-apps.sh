@@ -11,47 +11,47 @@ username=$(id -u -n 1000)
 builddr=$(pwd)
 
 # Applications and utilities
-apt install -y git pip ranger cmatrix espeak ncdu translate-shell rsync kdeconnect yt-dlp gpick
+nala install -y git pip ranger cmatrix espeak ncdu translate-shell rsync kdeconnect yt-dlp gpick
 
 # Dictionary
-apt install -y gnome-dictionary
+nala install -y gnome-dictionary
 
 # Torrent Management
-apt install -y transmission
+nala install -y transmission
 
 # sensors
-apt install -y lm-sensors
+nala install -y lm-sensors
 
 # Archiving tools
-apt install -y zip unzip p7zip-full
+nala install -y zip unzip p7zip-full
 
 # search applications
-apt install -y rofi dmenu
+nala install -y rofi dmenu
 
 # System Monitors
-apt install -y conky neofetch htop
+nala install -y conky neofetch htop
 
 # Calculator
-apt install -y qalculate
+nala install -y qalculate
 
 # Download Managers
-apt install -y curl wget axel aria2
+nala install -y curl wget axel aria2
 
 # redshift
-apt install -y redshift
+nala install -y redshift
 
 # mintstick
-apt install -y mintstick
+nala install -y mintstick
 
 # Text editor
-apt install -y geany micro neovim
+nala install -y geany micro neovim
 git clone https://github.com/VundleVim/Vundle.vim.git /home/$username/.vim/bundle/Vundle.vim
 
 # Media Player
-apt install -y mpv
+nala install -y mpv
 
 # Install plank dock
-apt install -y plank
+nala install -y plank
 
 # ani-cli
 git clone "https://github.com/pystardust/ani-cli.git"
@@ -60,11 +60,11 @@ rm -rf ani-cli
 
 # Goolge Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-apt install -y ./google-chrome-stable_current_amd64.deb
+nala install -y ./google-chrome-stable_current_amd64.deb
 rm google-chrome-stable_current_amd64.deb
 
 # Docklike
-apt install -y xfce4-dev-tools libstartup-notification0-dev libwnck-3-dev libxfce4ui-2-dev libxfce4panel-2.0-dev
+nala install -y xfce4-dev-tools libstartup-notification0-dev libwnck-3-dev libxfce4ui-2-dev libxfce4panel-2.0-dev
 cd /home/$username
 git clone https://github.com/nsz32/docklike-plugin &&  cd docklike-plugin
 ./autogen.sh
@@ -79,8 +79,8 @@ chmod +x fast
 mv fast /usr/local/bin
 
 # libreoffice install
-apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreoffice-writer
-apt install -y libreoffice-style*
+nala install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreoffice-writer
+nala install -y libreoffice-style*
 
 # config files
 cd /home/$username
