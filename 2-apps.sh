@@ -32,7 +32,7 @@ apt install -y rofi dmenu
 apt install -y conky neofetch htop
 
 # Calculator
-apt install -y qalculate
+apt install -y qalculate-gtk
 
 # Download Managers
 apt install -y curl wget axel aria2
