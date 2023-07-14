@@ -12,6 +12,6 @@ builddr=$(pwd)
 
 echo 'deb https://mega.nz/linux/repo/Debian_12/ /' | sudo tee /etc/apt/sources.list.d/megasync.list
 curl -fsSL https://mega.nz/linux/repo/Debian_12/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/megasync.gpg > /dev/null
-nala update
-nala install -y megasync
-nala install -y thunar-megasync
+apt update
+apt install -y megasync
+apt install -y thunar-megasync

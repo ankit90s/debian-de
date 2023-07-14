@@ -11,19 +11,19 @@ username=$(id -u -n 1000)
 builddr=$(pwd)
 
 # dependencies
-nala install -y gtk2-engines-murrine gtk2-engines-pixbuf
+apt install -y gtk2-engines-murrine gtk2-engines-pixbuf
 
 # dconf editor
-nala install -y dconf-editor
+apt install -y dconf-editor
 
 # Arc theme
-nala install -y arc-theme
+apt install -y arc-theme
 
 # Materia theme
-nala install -y materia-gtk-theme
+apt install -y materia-gtk-theme
 
 # mint themes
-nala install -y /home/$username/debian-de/deb/*.deb
+apt install -y /home/$username/debian-de/deb/*.deb
 
 # Colloid theme
 # git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
@@ -41,15 +41,15 @@ nala install -y /home/$username/debian-de/deb/*.deb
 # cd .. && rm -rf Qogir-theme
 
 # Papirus icon
-nala install -y papirus-icon-theme
+apt install -y papirus-icon-theme
 
 # Papirus folder
 wget -qO- https://git.io/papirus-folders-install | sh
 papirus-folders -C yaru --theme Papirus-Dark
 
 # kde apps theme fix
-nala install -y qt5-style-plugins
+apt install -y qt5-style-plugins
 cp environment /etc/environment
 
 # libreoffice sifr theme
-nala install -y libreoffice-style-sifr
+apt install -y libreoffice-style-sifr

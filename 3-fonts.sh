@@ -9,7 +9,7 @@ if ! [ $(id -u) = 0 ]; then
 fi
 
 # fonts
-nala install -y fonts-indic fonts-noto-color-emoji fonts-roboto fonts-ubuntu fonts-ubuntu-title fonts-ubuntu-console unifont fonts-cantarell
+apt install -y fonts-indic fonts-noto-color-emoji fonts-roboto fonts-ubuntu fonts-ubuntu-title fonts-ubuntu-console unifont fonts-cantarell
 
 # Material Design Icon Fonts
 mkdir -p /usr/share/fonts/Material-fonts
@@ -19,7 +19,7 @@ rm -f material-design-iconic-font.zip
 fc-cache -fv
 
 # Microsoft fonts
-nala install -y fonts-crosextra-carlito fonts-crosextra-caladea
+apt install -y fonts-crosextra-carlito fonts-crosextra-caladea
 
 cd /tmp
 fonts=( 

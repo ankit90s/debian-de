@@ -11,13 +11,11 @@ mv /etc/apt/sources.list /etc/apt/sources.list.bkp
 cp sources.list /etc/apt/sources.list
 apt update && apt upgrade -y
 
-apt install -y nala
-
 # Get username
 username=$(id -u -n 1000)
 
 ## Xfce4 installation
-nala install -y \
+apt install -y \
     libxfce4ui-utils \
     thunar \
     xfce4-appfinder \
@@ -40,25 +38,25 @@ nala install -y \
     xfce4-systemload-plugin
 
 # Other essential packages
-nala install -y xterm exa mugshot menulibre nvidia-detect
+apt install -y xterm exa mugshot menulibre nvidia-detect
 
 # Browser
-nala install -y firefox-esr
+apt install -y firefox-esr
 
 # PDF viewer
-nala install -y evince
+apt install -y evince
 
 # image viewer
-nala install -y gpicview
+apt install -y gpicview
 
 # cursor
-nala install -y bibata-cursor-theme dmz-cursor-theme
+apt install -y bibata-cursor-theme dmz-cursor-theme
 
 # terminal of choice
-nala install -y alacritty
+apt install -y alacritty
 
 # onboard keyboard
-nala install -y onboard
+apt install -y onboard
 
 # setup starship
 wget https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-musl.tar.gz
@@ -88,7 +86,7 @@ cd ..
 rm -rf pfetch
 
 # install slick greeter
-nala install -y slick-greeter lightdm-gtk-greeter-settings lightdm-settings numlockx
+apt install -y slick-greeter lightdm-gtk-greeter-settings lightdm-settings numlockx
 rm -rf /etc/lightdm
 cp -r settings/lightdm /etc
 
