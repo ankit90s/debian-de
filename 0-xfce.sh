@@ -84,6 +84,8 @@ mkdir /home/$username/ISOs
 git clone https://github.com/dylanaraps/pfetch.git
 cd pfetch
 install pfetch /usr/local/bin
+cd ..
+rm -rf pfetch
 
 # install slick greeter
 nala install -y slick-greeter lightdm-gtk-greeter-settings lightdm-settings numlockx
