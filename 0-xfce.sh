@@ -15,30 +15,13 @@ apt update && apt upgrade -y
 username=$(id -u -n 1000)
 
 ## Xfce4 installation
-apt install -y \
-    libxfce4ui-utils \
-    thunar \
-    xfce4-appfinder \
-    xfce4-panel \
-    xfce4-pulseaudio-plugin \
-    xfce4-whiskermenu-plugin \
-    xfce4-session \
-    xfce4-settings \
-    thunar-archive-plugin \
-    xfconf \
-    xfdesktop4 \
-    xfwm4 \
-    xfce4-screenshooter \
-    xfce4-power-manager \
-    network-manager-gnome \
-    xfce4-notifyd \
-    xfce4-clipman \
-    xfce4-clipman-plugin \
-    xfce4-appmenu-plugin \
-    xfce4-systemload-plugin
+apt install -y libxfce4ui-utils xfce4-systemload-plugin xfce4-appmenu-plugin xfce4-clipman-plugin xfce4-clipman xfce4-notifyd thunar xfce4-appfinder xfce4-panel xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin xfce4-screenshooter xfce4-session xfce4-settings thunar-archive-plugin xfconf xfdesktop4 xfwm4 xfce4-power-manager
 
 # Other essential packages
 apt install -y xterm exa mugshot menulibre nvidia-detect
+
+# network manager
+apt install -y network-manager-gnome 
 
 # Browser
 apt install -y firefox-esr
@@ -74,6 +57,7 @@ cp bash_aliases /home/$username/.bash_aliases
 
 # mkdir
 mkdir /home/$username/ISOs
+chown $username:$username /home/$username/*
 
 # wallpapers
 ./4-wallpaper.sh
@@ -93,7 +77,7 @@ cp -r settings/lightdm /etc
 # Copy grub file
 rm /etc/default/grub
 cp settings/grub /etc/default
-sudo update-grub
+update-grub
 
 echo 
 echo xfce install complete, Rebooting Now
