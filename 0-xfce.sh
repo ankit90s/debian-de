@@ -24,8 +24,8 @@ echo -e "\e[1;32m Installing essential packages \e[0m"
 apt install -y xterm exa mugshot menulibre nvidia-detect
 
 # network manager
-echo -e "\e[1;32m Installing network manager \e[0m"
-apt install -y network-manager-gnome 
+# echo -e "\e[1;32m Installing network manager \e[0m"
+# apt install -y network-manager-gnome 
 
 # Browser
 echo -e "\e[1;32m Installing firefox-esr \e[0m"
@@ -75,7 +75,7 @@ chown $username:$username /home/$username/*
 
 # wallpapers
 echo -e "\e[1;32m Installing distrotube wallpaper collection \e[0m"
-# ./4-wallpapers.sh
+./4-wallpapers.sh
 
 # pfetch
 echo -e "\e[1;32m Installing pfetch \e[0m"
