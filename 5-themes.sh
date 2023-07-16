@@ -2,7 +2,7 @@
 
 ## check for sudo/root
 if ! [ $(id -u) = 0 ]; then
-  echo "This script must run with sudo, try again..."
+  echo -e "\e[1;31m Please run as sudo or root \e[0m"
   exit 1
 fi
 
@@ -11,18 +11,23 @@ username=$(id -u -n 1000)
 builddr=$(pwd)
 
 # dependencies
+echo -e "\e[1;32m Installing theme dependencies \e[0m"
 apt install -y gtk2-engines-murrine gtk2-engines-pixbuf
 
 # dconf editor
+echo -e "\e[1;32m Installing dconf editor \e[0m"
 apt install -y dconf-editor
 
 # Arc theme
+echo -e "\e[1;32m Installing Arc theme \e[0m"
 apt install -y arc-theme
 
 # Materia theme
+echo -e "\e[1;32m Installing Materia theme \e[0m"
 apt install -y materia-gtk-theme
 
 # mint themes
+echo -e "\e[1;32m Installing linux mint themes \e[0m"
 apt install -y /home/$username/debian-de/deb/*.deb
 
 # Colloid theme
@@ -41,15 +46,15 @@ apt install -y /home/$username/debian-de/deb/*.deb
 # cd .. && rm -rf Qogir-theme
 
 # Papirus icon
+echo -e "\e[1;32m Installing papirus icon theme \e[0m"
 apt install -y papirus-icon-theme
 
 # Papirus folder
+echo -e "\e[1;32m Installing papirus folder theme \e[0m"
 wget -qO- https://git.io/papirus-folders-install | sh
 papirus-folders -C yaru --theme Papirus-Dark
 
 # kde apps theme fix
+echo -e "\e[1;32m Fix for qt-apps \e[0m"
 apt install -y qt5-style-plugins
 cp environment /etc/environment
-
-# libreoffice sifr theme
-apt install -y libreoffice-style-sifr

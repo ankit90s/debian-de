@@ -2,7 +2,7 @@
 
 # check for sudo/root
 if ! [ $(id -u) = 0 ]; then
-  echo "This script must run with sudo, try again..."
+  echo -e "\e[1;31m Please run as sudo or root \e[0m"
   exit 1
 fi
 
