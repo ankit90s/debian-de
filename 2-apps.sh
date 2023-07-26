@@ -73,10 +73,10 @@ install ani-cli/ani-cli /usr/local/bin
 rm -rf ani-cli
 
 # Goolge Chrome
-echo -e "\e[1;32m Installing google chrome \e[0m"
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-apt install -y ./google-chrome-stable_current_amd64.deb
-rm google-chrome-stable_current_amd64.deb
+# echo -e "\e[1;32m Installing google chrome \e[0m"
+# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+# apt install -y ./google-chrome-stable_current_amd64.deb
+# rm google-chrome-stable_current_amd64.deb
 
 # Docklike
 echo -e "\e[1;32m Installing docklike plugin for xfce \e[0m"
