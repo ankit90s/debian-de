@@ -28,7 +28,7 @@ apt install -y lm-sensors
 
 # Archiving tools
 echo -e "\e[1;32m Installing archiving tools \e[0m"
-apt install -y zip unzip p7zip-full
+apt install -y zip unzip 7zip
 
 # search applications
 echo -e "\e[1;32m Installing rofi and dmenu \e[0m"

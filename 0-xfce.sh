@@ -25,11 +25,11 @@ apt install -y xterm exa mugshot menulibre nvidia-detect
 
 # network manager
 # echo -e "\e[1;32m Installing network manager \e[0m"
-# apt install -y network-manager-gnome 
+# apt install -y nm-tray
 
 # Browser
-echo -e "\e[1;32m Installing firefox-esr \e[0m"
-apt install -y firefox-esr
+echo -e "\e[1;32m Installing firefox-esr and chromium \e[0m"
+apt install -y firefox-esr chromium
 
 # PDF viewer
 echo -e "\e[1;32m Installing Document viewer \e[0m"
