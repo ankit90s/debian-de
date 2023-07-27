@@ -10,7 +10,14 @@ fi
 
 # fonts
 echo -e "\e[1;32m Installing system fonts \e[0m"
-apt install -y fonts-indic fonts-noto-color-emoji fonts-roboto fonts-ubuntu fonts-ubuntu-title fonts-ubuntu-console unifont fonts-cantarell
+apt install -y fonts-indic \
+    fonts-noto-color-emoji \
+    fonts-roboto fonts-ubuntu \
+    fonts-ubuntu-title \
+    fonts-ubuntu-console \
+    unifont \
+    fonts-dosis \
+    fonts-cantarell
 
 # Material Design Icon Fonts
 echo -e "\e[1;32m Installing material fonts for mpv \e[0m"
