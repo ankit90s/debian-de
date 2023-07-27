@@ -30,6 +30,7 @@ echo -e "\e[1;32m Installing build tools \e[0m"
 apt install -y build-essential linux-headers-$(uname -r) intel-microcode
 
 echo 
-echo -e "\e[1;32m Rebooting now \e[0m"
-sleep 2s
+echo -e "\e[1;32m Rebooting please wait \e[0m"
+
+sleep 5s
 reboot
