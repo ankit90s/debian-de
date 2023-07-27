@@ -12,7 +12,11 @@ builddr=$(pwd)
 
 # Applications and utilities
 echo -e "\e[1;32m Installing apps and utilities \e[0m"
-apt install -y git pip ranger cmatrix espeak ncdu translate-shell rsync kdeconnect yt-dlp gpick
+apt install -y git pip ranger cmatrix espeak ncdu translate-shell rsync kdeconnect gpick
+
+# yt-dlp
+echo -e "\e[1;32m Installing yt-dlp \e[0m"
+apt install -y yt-dlp -t bookworm-backports
 
 # Dictionary
 echo -e "\e[1;32m Installing gnome-dictionary \e[0m"
@@ -68,6 +72,7 @@ apt install -y plank
 
 # ani-cli
 echo -e "\e[1;32m Installing ani-cli for anime lovers \e[0m"
+apt install -y fzf
 git clone "https://github.com/pystardust/ani-cli.git"
 install ani-cli/ani-cli /usr/local/bin
 rm -rf ani-cli
