@@ -47,7 +47,7 @@ apt install -y /home/$username/debian-de/deb/*.deb
 
 # Papirus icon
 echo -e "\e[1;32m Installing papirus icon theme \e[0m"
-apt install -y papirus-icon-theme
+# apt install -y papirus-icon-theme
 
 # Papirus folder
 echo -e "\e[1;32m Installing papirus folder theme \e[0m"
@@ -56,5 +56,5 @@ papirus-folders -C yaru --theme Papirus-Dark
 
 # kde apps theme fix
 echo -e "\e[1;32m Fix for qt-apps \e[0m"
-apt install -y qt5-style-plugins
-cp environment /etc/environment
+# apt install -y qt5-style-plugins
+# cp environment /etc/environment
