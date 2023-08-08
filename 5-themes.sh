@@ -57,4 +57,4 @@ papirus-folders -C yaru --theme Papirus-Dark
 # kde apps theme fix
 echo -e "\e[1;32m Fix for qt-apps \e[0m"
 # apt install -y qt5-style-plugins
-# cp environment /etc/environment
+cp environment /etc/environment
