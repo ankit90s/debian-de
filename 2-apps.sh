@@ -54,6 +54,10 @@ apt install -y curl wget axel aria2
 echo -e "\e[1;32m Installing redshift \e[0m"
 apt install -y redshift
 
+# synaptic package manager
+echo -e "\e[1;32m Installing Synaptic Package Manager \e[0m"
+apt install -y synaptic
+
 # mintstick
 echo -e "\e[1;32m Installing mint stick \e[0m"
 apt install -y mintstick
