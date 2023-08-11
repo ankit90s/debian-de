@@ -11,45 +11,46 @@ echo -e "\e[1;32m Copying sources.list file \e[0m"
 mv /etc/apt/sources.list /etc/apt/sources.list.bkp
 cp sources.list /etc/apt/sources.list
 apt update && apt upgrade -y
+apt install -y nala
 
 # Get username
 username=$(id -u -n 1000)
 
 ## Xfce4 installation
 echo -e "\e[1;32m Installing xfce4 \e[0m"
-apt install -y libxfce4ui-utils xfce4-systemload-plugin xfce4-appmenu-plugin xfce4-clipman-plugin xfce4-clipman xfce4-notifyd thunar xfce4-appfinder xfce4-panel xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin xfce4-screenshooter xfce4-session xfce4-settings thunar-archive-plugin xfconf xfdesktop4 xfwm4 xfce4-power-manager
+nala install -y libxfce4ui-utils xfce4-systemload-plugin xfce4-appmenu-plugin xfce4-clipman-plugin xfce4-clipman xfce4-notifyd thunar xfce4-appfinder xfce4-panel xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin xfce4-screenshooter xfce4-session xfce4-settings thunar-archive-plugin xfconf xfdesktop4 xfwm4 xfce4-power-manager
 
 # Other essential packages
 echo -e "\e[1;32m Installing essential packages \e[0m"
-apt install -y xterm exa mugshot menulibre nvidia-detect
+nala install -y xterm exa mugshot menulibre nvidia-detect
 
 # network manager
 # echo -e "\e[1;32m Installing network manager \e[0m"
-# apt install -y nm-tray
+# nala install -y nm-tray
 
 # Browser
 echo -e "\e[1;32m Installing firefox-esr and chromium \e[0m"
-apt install -y firefox-esr chromium
+nala install -y firefox-esr chromium
 
 # PDF viewer
 echo -e "\e[1;32m Installing Document viewer \e[0m"
-apt install -y evince
+nala install -y evince
 
 # image viewer
 echo -e "\e[1;32m Installing Image viewer \e[0m"
-apt install -y gpicview
+nala install -y gpicview
 
 # cursor
 echo -e "\e[1;32m Installing cursor themes \e[0m"
-apt install -y bibata-cursor-theme dmz-cursor-theme
+nala install -y bibata-cursor-theme dmz-cursor-theme
 
 # terminal of choice
 echo -e "\e[1;32m Installing terminal \e[0m"
-apt install -y alacritty
+nala install -y alacritty
 
 # onboard keyboard
 echo -e "\e[1;32m Installing onscreen keyboard \e[0m"
-apt install -y onboard
+nala install -y onboard
 
 # setup starship
 echo -e "\e[1;32m Installing starship shell prompt \e[0m"
@@ -87,7 +88,7 @@ rm -rf pfetch
 
 # install slick greeter
 echo -e "\e[1;32m Installing slick greeter \e[0m"
-apt install -y slick-greeter lightdm-gtk-greeter-settings lightdm-settings numlockx
+nala install -y slick-greeter lightdm-gtk-greeter-settings lightdm-settings numlockx
 rm -rf /etc/lightdm
 cp -r settings/lightdm /etc
 

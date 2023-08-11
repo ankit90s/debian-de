@@ -14,9 +14,9 @@ echo -e "\e[1;32m Installing megasync \e[0m"
 
 echo 'deb https://mega.nz/linux/repo/Debian_12/ /' | sudo tee /etc/apt/sources.list.d/megasync.list
 curl -fsSL https://mega.nz/linux/repo/Debian_12/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/megasync.gpg > /dev/null
-apt update
-apt install -y megasync
-apt install -y thunar-megasync
+nala update
+nala install -y megasync
+nala install -y thunar-megasync
 
 echo
 echo -e "\e[1;32m Rebooting please wait \e[0m"

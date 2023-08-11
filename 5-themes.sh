@@ -12,23 +12,23 @@ builddr=$(pwd)
 
 # dependencies
 echo -e "\e[1;32m Installing theme dependencies \e[0m"
-apt install -y gtk2-engines-murrine gtk2-engines-pixbuf
+nala install -y gtk2-engines-murrine gtk2-engines-pixbuf
 
 # dconf editor
 echo -e "\e[1;32m Installing dconf editor \e[0m"
-apt install -y dconf-editor
+nala install -y dconf-editor
 
 # Arc theme
 echo -e "\e[1;32m Installing Arc theme \e[0m"
-apt install -y arc-theme
+nala install -y arc-theme
 
 # Materia theme
 echo -e "\e[1;32m Installing Materia theme \e[0m"
-apt install -y materia-gtk-theme
+nala install -y materia-gtk-theme
 
 # mint themes
 echo -e "\e[1;32m Installing linux mint themes \e[0m"
-apt install -y /home/$username/debian-de/deb/*.deb
+nala install -y /home/$username/debian-de/deb/*.deb
 
 # Colloid theme
 # git clone https://github.com/vinceliuice/Colloid-gtk-theme.git
@@ -47,7 +47,7 @@ apt install -y /home/$username/debian-de/deb/*.deb
 
 # Papirus icon
 echo -e "\e[1;32m Installing papirus icon theme \e[0m"
-# apt install -y papirus-icon-theme
+# nala install -y papirus-icon-theme
 
 # Papirus folder
 echo -e "\e[1;32m Installing papirus folder theme \e[0m"
@@ -56,5 +56,5 @@ papirus-folders -C yaru --theme Papirus-Dark
 
 # kde apps theme fix
 echo -e "\e[1;32m Fix for qt-apps \e[0m"
-# apt install -y qt5-style-plugins
+nala install -y qt5-style-plugins
 cp environment /etc/environment
