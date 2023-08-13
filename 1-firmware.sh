@@ -12,22 +12,22 @@ builddr=$(pwd)
 
 # Restricted extras
 echo -e "\e[1;32m Installing restricted extras \e[0m"
-nala install -y ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
+aptitude install -y ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
 
 # Network File Tools/System Events
 echo -e "\e[1;32m Network File Tools and System Events \e[0m"
-nala install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends locate mtp-tools
+aptitude install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends locate mtp-tools
 
 systemctl enable avahi-daemon
 systemctl enable acpid
 
 # Mesa and vulkan support
 echo -e "\e[1;32m Installing mesa and vulkan support \e[0m"
-nala install -y mesa-vulkan-drivers libvulkan1 vulkan-tools vulkan-validationlayers
+aptitude install -y mesa-vulkan-drivers libvulkan1 vulkan-tools vulkan-validationlayers
 
 # install build tools
 echo -e "\e[1;32m Installing build tools \e[0m"
-nala install -y build-essential linux-headers-$(uname -r) intel-microcode
+aptitude install -y build-essential linux-headers-$(uname -r) intel-microcode
 
 echo 
 echo -e "\e[1;32m Rebooting please wait \e[0m"

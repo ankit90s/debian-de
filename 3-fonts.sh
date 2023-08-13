@@ -10,7 +10,7 @@ fi
 
 # fonts
 echo -e "\e[1;32m Installing system fonts \e[0m"
-nala install -y fonts-indic \
+aptitude install -y fonts-indic \
     fonts-noto-color-emoji \
     fonts-roboto fonts-ubuntu \
     fonts-ubuntu-title \
@@ -29,7 +29,7 @@ fc-cache -fv
 
 # Microsoft fonts
 echo -e "\e[1;32m Installing Microsoft fonts \e[0m"
-nala install -y fonts-crosextra-carlito fonts-crosextra-caladea
+aptitude install -y fonts-crosextra-carlito fonts-crosextra-caladea
 
 # Nerd fonts
 echo -e "\e[1;32m Installing nerd fonts \e[0m"
