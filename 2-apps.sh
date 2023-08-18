@@ -106,8 +106,8 @@ mv fast /usr/local/bin
 
 # libreoffice install
 echo -e "\e[1;32m Installing libreoffice and its themes \e[0m"
-apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreoffice-writer
-apt install -y libreoffice-style*
+apt install -y libreoffice-gtk3 libreoffice-impress libreoffice-calc libreoffice-writer -t bookworm-backports
+apt install -y libreoffice-style* -t bookworm-backports
 
 # config files
 echo -e "\e[1;32m Copying config files \e[0m"
