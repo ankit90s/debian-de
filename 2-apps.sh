@@ -119,5 +119,6 @@ cd $builddr
 
 echo 
 echo -e "\e[1;32m Rebooting now \e[0m"
+notify-send "System" "Rebooting in 5 seconds"
 sleep 5s
 reboot
