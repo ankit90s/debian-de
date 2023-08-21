@@ -20,6 +20,5 @@ apt install -y thunar-megasync
 
 echo
 echo -e "\e[1;32m Rebooting please wait \e[0m"
-notify-send "System" "Rebooting in 5 sec"
 sleep 5s
 reboot
